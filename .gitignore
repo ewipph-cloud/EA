@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+XAUUSD_M5_HistData_*.csv
+HISTDATA_XAUUSD_M1_*.zip

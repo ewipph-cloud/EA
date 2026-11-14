@@ -1,0 +1,145 @@
+{
+  "dataset": "/root/.copilot/session-state/7b02935e-960c-4df5-a2b3-b80a75c15b4b/files/XAUUSD_M5_HistData_2022-2026.csv",
+  "date_range": {
+    "first_bar": "2022-01-02 18:00:00",
+    "last_bar": "2026-11-06 16:50:00"
+  },
+  "starting_capital_IDR": 5000000.0,
+  "position_sizing": "Compounded: each position risks the selected percentage of current equity.",
+  "strategy": "confirmed_support_breakdown",
+  "trailing_stop_configuration": {
+    "initial_sl": 1.0,
+    "trail_activation": 0.5,
+    "trail_gap": 0.5
+  },
+  "execution_assumptions": {
+    "entry": "Signal-bar close; stop checks start on the next M5 bar.",
+    "take_profit": "None.",
+    "maximum_hold_bars": 144,
+    "one_open_position_per_strategy": true,
+    "spreads_commission_slippage_swap": "Not included; source prices are bid-only. IDR results are risk-unit simulations and do not determine broker lot size.",
+    "test_period": "Diagnostic only; this period was inspected in earlier research."
+  },
+  "results_by_risk": {
+    "0.5%": {
+      "full_history_compounded": {
+        "starting_capital_IDR": 5000000.0,
+        "ending_capital_IDR": 4144888.43,
+        "gross_profit_IDR": -855111.57,
+        "opened_positions": 983,
+        "winning_positions": 501,
+        "losing_positions": 480,
+        "max_drawdown_percent": 28.11
+      },
+      "periods_started_with_5M_IDR": {
+        "train": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 3855066.13,
+          "gross_profit_IDR": -1144933.87,
+          "opened_positions": 716,
+          "winning_positions": 354,
+          "losing_positions": 360,
+          "max_drawdown_percent": 27.09
+        },
+        "validation": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 5234146.79,
+          "gross_profit_IDR": 234146.79,
+          "opened_positions": 151,
+          "winning_positions": 83,
+          "losing_positions": 68,
+          "max_drawdown_percent": 7.1
+        },
+        "test_diagnostic_only": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 5161216.1,
+          "gross_profit_IDR": 161216.1,
+          "opened_positions": 115,
+          "winning_positions": 64,
+          "losing_positions": 51,
+          "max_drawdown_percent": 4.42
+        }
+      }
+    },
+    "1%": {
+      "full_history_compounded": {
+        "starting_capital_IDR": 5000000.0,
+        "ending_capital_IDR": 3351782.67,
+        "gross_profit_IDR": -1648217.33,
+        "opened_positions": 983,
+        "winning_positions": 501,
+        "losing_positions": 480,
+        "max_drawdown_percent": 49.25
+      },
+      "periods_started_with_5M_IDR": {
+        "train": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 2921004.35,
+          "gross_profit_IDR": -2078995.65,
+          "opened_positions": 716,
+          "winning_positions": 354,
+          "losing_positions": 360,
+          "max_drawdown_percent": 47.65
+        },
+        "validation": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 5456180.32,
+          "gross_profit_IDR": 456180.32,
+          "opened_positions": 151,
+          "winning_positions": 83,
+          "losing_positions": 68,
+          "max_drawdown_percent": 13.75
+        },
+        "test_diagnostic_only": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 5310797.56,
+          "gross_profit_IDR": 310797.56,
+          "opened_positions": 115,
+          "winning_positions": 64,
+          "losing_positions": 51,
+          "max_drawdown_percent": 8.68
+        }
+      }
+    },
+    "2%": {
+      "full_history_compounded": {
+        "starting_capital_IDR": 5000000.0,
+        "ending_capital_IDR": 2036722.81,
+        "gross_profit_IDR": -2963277.19,
+        "opened_positions": 983,
+        "winning_positions": 501,
+        "losing_positions": 480,
+        "max_drawdown_percent": 76.06
+      },
+      "periods_started_with_5M_IDR": {
+        "train": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 1592780.68,
+          "gross_profit_IDR": -3407219.32,
+          "opened_positions": 716,
+          "winning_positions": 354,
+          "losing_positions": 360,
+          "max_drawdown_percent": 74.23
+        },
+        "validation": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 5855639.74,
+          "gross_profit_IDR": 855639.74,
+          "opened_positions": 151,
+          "winning_positions": 83,
+          "losing_positions": 68,
+          "max_drawdown_percent": 25.81
+        },
+        "test_diagnostic_only": {
+          "starting_capital_IDR": 5000000.0,
+          "ending_capital_IDR": 5570773.87,
+          "gross_profit_IDR": 570773.87,
+          "opened_positions": 115,
+          "winning_positions": 64,
+          "losing_positions": 51,
+          "max_drawdown_percent": 16.73
+        }
+      }
+    }
+  }
+}

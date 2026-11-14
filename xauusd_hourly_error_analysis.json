@@ -1,0 +1,345 @@
+{
+  "threshold": 0.52,
+  "timezone": "dataset time_est (fixed EST; not DST-adjusted)",
+  "validation": {
+    "00:00": {
+      "events": 151,
+      "signals": 63,
+      "correct": 28,
+      "signal_coverage": 0.41721854304635764,
+      "accuracy": 0.4444444444444444
+    },
+    "01:00": {
+      "events": 174,
+      "signals": 71,
+      "correct": 36,
+      "signal_coverage": 0.40804597701149425,
+      "accuracy": 0.5070422535211268
+    },
+    "02:00": {
+      "events": 187,
+      "signals": 77,
+      "correct": 41,
+      "signal_coverage": 0.4117647058823529,
+      "accuracy": 0.5324675324675324
+    },
+    "03:00": {
+      "events": 178,
+      "signals": 80,
+      "correct": 42,
+      "signal_coverage": 0.449438202247191,
+      "accuracy": 0.525
+    },
+    "04:00": {
+      "events": 157,
+      "signals": 59,
+      "correct": 30,
+      "signal_coverage": 0.37579617834394907,
+      "accuracy": 0.5084745762711864
+    },
+    "05:00": {
+      "events": 179,
+      "signals": 64,
+      "correct": 36,
+      "signal_coverage": 0.3575418994413408,
+      "accuracy": 0.5625
+    },
+    "06:00": {
+      "events": 161,
+      "signals": 66,
+      "correct": 25,
+      "signal_coverage": 0.40993788819875776,
+      "accuracy": 0.3787878787878788
+    },
+    "07:00": {
+      "events": 185,
+      "signals": 68,
+      "correct": 29,
+      "signal_coverage": 0.3675675675675676,
+      "accuracy": 0.4264705882352941
+    },
+    "08:00": {
+      "events": 245,
+      "signals": 83,
+      "correct": 50,
+      "signal_coverage": 0.33877551020408164,
+      "accuracy": 0.6024096385542169
+    },
+    "09:00": {
+      "events": 259,
+      "signals": 92,
+      "correct": 47,
+      "signal_coverage": 0.3552123552123552,
+      "accuracy": 0.5108695652173914
+    },
+    "10:00": {
+      "events": 199,
+      "signals": 68,
+      "correct": 46,
+      "signal_coverage": 0.3417085427135678,
+      "accuracy": 0.6764705882352942
+    },
+    "11:00": {
+      "events": 127,
+      "signals": 54,
+      "correct": 28,
+      "signal_coverage": 0.4251968503937008,
+      "accuracy": 0.5185185185185185
+    },
+    "12:00": {
+      "events": 120,
+      "signals": 56,
+      "correct": 28,
+      "signal_coverage": 0.4666666666666667,
+      "accuracy": 0.5
+    },
+    "13:00": {
+      "events": 125,
+      "signals": 70,
+      "correct": 35,
+      "signal_coverage": 0.56,
+      "accuracy": 0.5
+    },
+    "14:00": {
+      "events": 135,
+      "signals": 71,
+      "correct": 41,
+      "signal_coverage": 0.5259259259259259,
+      "accuracy": 0.5774647887323944
+    },
+    "15:00": {
+      "events": 134,
+      "signals": 81,
+      "correct": 42,
+      "signal_coverage": 0.6044776119402985,
+      "accuracy": 0.5185185185185185
+    },
+    "16:00": {
+      "events": 105,
+      "signals": 77,
+      "correct": 54,
+      "signal_coverage": 0.7333333333333333,
+      "accuracy": 0.7012987012987013
+    },
+    "17:00": {
+      "events": 9,
+      "signals": 3,
+      "correct": 3,
+      "signal_coverage": 0.3333333333333333,
+      "accuracy": 1.0
+    },
+    "18:00": {
+      "events": 227,
+      "signals": 120,
+      "correct": 51,
+      "signal_coverage": 0.5286343612334802,
+      "accuracy": 0.425
+    },
+    "19:00": {
+      "events": 157,
+      "signals": 74,
+      "correct": 37,
+      "signal_coverage": 0.4713375796178344,
+      "accuracy": 0.5
+    },
+    "20:00": {
+      "events": 221,
+      "signals": 93,
+      "correct": 43,
+      "signal_coverage": 0.42081447963800905,
+      "accuracy": 0.46236559139784944
+    },
+    "21:00": {
+      "events": 191,
+      "signals": 73,
+      "correct": 37,
+      "signal_coverage": 0.38219895287958117,
+      "accuracy": 0.5068493150684932
+    },
+    "22:00": {
+      "events": 154,
+      "signals": 60,
+      "correct": 33,
+      "signal_coverage": 0.38961038961038963,
+      "accuracy": 0.55
+    },
+    "23:00": {
+      "events": 106,
+      "signals": 37,
+      "correct": 21,
+      "signal_coverage": 0.3490566037735849,
+      "accuracy": 0.5675675675675675
+    }
+  },
+  "test_diagnostic_only": {
+    "00:00": {
+      "events": 130,
+      "signals": 45,
+      "correct": 23,
+      "signal_coverage": 0.34615384615384615,
+      "accuracy": 0.5111111111111111
+    },
+    "01:00": {
+      "events": 201,
+      "signals": 90,
+      "correct": 42,
+      "signal_coverage": 0.44776119402985076,
+      "accuracy": 0.4666666666666667
+    },
+    "02:00": {
+      "events": 171,
+      "signals": 64,
+      "correct": 31,
+      "signal_coverage": 0.3742690058479532,
+      "accuracy": 0.484375
+    },
+    "03:00": {
+      "events": 191,
+      "signals": 69,
+      "correct": 31,
+      "signal_coverage": 0.3612565445026178,
+      "accuracy": 0.4492753623188406
+    },
+    "04:00": {
+      "events": 164,
+      "signals": 74,
+      "correct": 34,
+      "signal_coverage": 0.45121951219512196,
+      "accuracy": 0.4594594594594595
+    },
+    "05:00": {
+      "events": 149,
+      "signals": 53,
+      "correct": 18,
+      "signal_coverage": 0.35570469798657717,
+      "accuracy": 0.33962264150943394
+    },
+    "06:00": {
+      "events": 156,
+      "signals": 47,
+      "correct": 22,
+      "signal_coverage": 0.30128205128205127,
+      "accuracy": 0.46808510638297873
+    },
+    "07:00": {
+      "events": 190,
+      "signals": 82,
+      "correct": 38,
+      "signal_coverage": 0.43157894736842106,
+      "accuracy": 0.4634146341463415
+    },
+    "08:00": {
+      "events": 261,
+      "signals": 114,
+      "correct": 52,
+      "signal_coverage": 0.4367816091954023,
+      "accuracy": 0.45614035087719296
+    },
+    "09:00": {
+      "events": 246,
+      "signals": 107,
+      "correct": 58,
+      "signal_coverage": 0.4349593495934959,
+      "accuracy": 0.5420560747663551
+    },
+    "10:00": {
+      "events": 189,
+      "signals": 65,
+      "correct": 36,
+      "signal_coverage": 0.3439153439153439,
+      "accuracy": 0.5538461538461539
+    },
+    "11:00": {
+      "events": 137,
+      "signals": 49,
+      "correct": 16,
+      "signal_coverage": 0.35766423357664234,
+      "accuracy": 0.32653061224489793
+    },
+    "12:00": {
+      "events": 120,
+      "signals": 57,
+      "correct": 29,
+      "signal_coverage": 0.475,
+      "accuracy": 0.5087719298245614
+    },
+    "13:00": {
+      "events": 128,
+      "signals": 68,
+      "correct": 32,
+      "signal_coverage": 0.53125,
+      "accuracy": 0.47058823529411764
+    },
+    "14:00": {
+      "events": 124,
+      "signals": 51,
+      "correct": 20,
+      "signal_coverage": 0.4112903225806452,
+      "accuracy": 0.39215686274509803
+    },
+    "15:00": {
+      "events": 130,
+      "signals": 74,
+      "correct": 30,
+      "signal_coverage": 0.5692307692307692,
+      "accuracy": 0.40540540540540543
+    },
+    "16:00": {
+      "events": 90,
+      "signals": 50,
+      "correct": 27,
+      "signal_coverage": 0.5555555555555556,
+      "accuracy": 0.54
+    },
+    "17:00": {
+      "events": 27,
+      "signals": 12,
+      "correct": 6,
+      "signal_coverage": 0.4444444444444444,
+      "accuracy": 0.5
+    },
+    "18:00": {
+      "events": 189,
+      "signals": 99,
+      "correct": 49,
+      "signal_coverage": 0.5238095238095238,
+      "accuracy": 0.494949494949495
+    },
+    "19:00": {
+      "events": 178,
+      "signals": 92,
+      "correct": 47,
+      "signal_coverage": 0.5168539325842697,
+      "accuracy": 0.5108695652173914
+    },
+    "20:00": {
+      "events": 249,
+      "signals": 119,
+      "correct": 48,
+      "signal_coverage": 0.4779116465863454,
+      "accuracy": 0.40336134453781514
+    },
+    "21:00": {
+      "events": 210,
+      "signals": 78,
+      "correct": 40,
+      "signal_coverage": 0.37142857142857144,
+      "accuracy": 0.5128205128205128
+    },
+    "22:00": {
+      "events": 149,
+      "signals": 56,
+      "correct": 19,
+      "signal_coverage": 0.37583892617449666,
+      "accuracy": 0.3392857142857143
+    },
+    "23:00": {
+      "events": 124,
+      "signals": 37,
+      "correct": 17,
+      "signal_coverage": 0.29838709677419356,
+      "accuracy": 0.4594594594594595
+    }
+  },
+  "warning": "Hourly slices have small samples and multiple comparisons; the test interval was previously inspected."
+}

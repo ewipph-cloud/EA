@@ -1,0 +1,217 @@
+{
+  "dataset": "/root/.copilot/session-state/7b02935e-960c-4df5-a2b3-b80a75c15b4b/files/XAUUSD_M5_HistData_2022-2026.csv",
+  "bar_count": 334265,
+  "event_count": 26825,
+  "models": {
+    "pattern_context": {
+      "dimensions": 38,
+      "threshold": 0.54,
+      "validation": {
+        "signals": 393,
+        "coverage": 0.10113226968605249,
+        "accuracy": 0.5419847328244275,
+        "wilson_95_lower": 0.4925557514450243
+      },
+      "test_diagnostic_only": {
+        "signals": 388,
+        "coverage": 0.09941070971047912,
+        "accuracy": 0.45618556701030927,
+        "wilson_95_lower": 0.4072962188766715
+      },
+      "split": {
+        "train_end_index": 233985,
+        "validation_end_index": 284125,
+        "train_samples": 19035,
+        "validation_samples": 3886,
+        "test_samples": 3903
+      }
+    },
+    "pattern_context_candles": {
+      "dimensions": 42,
+      "threshold": 0.54,
+      "validation": {
+        "signals": 395,
+        "coverage": 0.10164693772516727,
+        "accuracy": 0.5164556962025316,
+        "wilson_95_lower": 0.4672524172105404
+      },
+      "test_diagnostic_only": {
+        "signals": 384,
+        "coverage": 0.0983858570330515,
+        "accuracy": 0.4479166666666667,
+        "wilson_95_lower": 0.3989384596625912
+      },
+      "split": {
+        "train_end_index": 233985,
+        "validation_end_index": 284125,
+        "train_samples": 19035,
+        "validation_samples": 3886,
+        "test_samples": 3903
+      }
+    },
+    "pattern_context_indicators": {
+      "dimensions": 47,
+      "threshold": 0.51,
+      "validation": {
+        "signals": 2611,
+        "coverage": 0.6718991250643335,
+        "accuracy": 0.5082343929528916,
+        "wilson_95_lower": 0.4890601307683075
+      },
+      "test_diagnostic_only": {
+        "signals": 2604,
+        "coverage": 0.6671790930053805,
+        "accuracy": 0.48118279569892475,
+        "wilson_95_lower": 0.4620336264044664
+      },
+      "split": {
+        "train_end_index": 233985,
+        "validation_end_index": 284125,
+        "train_samples": 19035,
+        "validation_samples": 3886,
+        "test_samples": 3903
+      }
+    },
+    "pattern_context_candles_indicators": {
+      "dimensions": 51,
+      "threshold": 0.54,
+      "validation": {
+        "signals": 392,
+        "coverage": 0.10087493566649511,
+        "accuracy": 0.5153061224489796,
+        "wilson_95_lower": 0.4659237336941653
+      },
+      "test_diagnostic_only": {
+        "signals": 381,
+        "coverage": 0.09761721752498079,
+        "accuracy": 0.4356955380577428,
+        "wilson_95_lower": 0.3867924455774304
+      },
+      "split": {
+        "train_end_index": 233985,
+        "validation_end_index": 284125,
+        "train_samples": 19035,
+        "validation_samples": 3886,
+        "test_samples": 3903
+      }
+    },
+    "pattern_context_indicators_interactions": {
+      "dimensions": 59,
+      "threshold": 0.52,
+      "validation": {
+        "signals": 1660,
+        "coverage": 0.4271744724652599,
+        "accuracy": 0.5198795180722892,
+        "wilson_95_lower": 0.49582720173569556
+      },
+      "test_diagnostic_only": {
+        "signals": 1652,
+        "coverage": 0.42326415577760695,
+        "accuracy": 0.46307506053268765,
+        "wilson_95_lower": 0.43914299935701234
+      },
+      "split": {
+        "train_end_index": 233985,
+        "validation_end_index": 284125,
+        "train_samples": 19035,
+        "validation_samples": 3886,
+        "test_samples": 3903
+      },
+      "validation_error_groups": {
+        "BB: above 0.8": {
+          "signals": 343,
+          "correct": 174,
+          "accuracy": 0.5072886297376094
+        },
+        "BB: below 0.2": {
+          "signals": 359,
+          "correct": 195,
+          "accuracy": 0.5431754874651811
+        },
+        "BB: middle": {
+          "signals": 958,
+          "correct": 494,
+          "accuracy": 0.5156576200417536
+        },
+        "RSI: middle": {
+          "signals": 1490,
+          "correct": 767,
+          "accuracy": 0.5147651006711409
+        },
+        "RSI: overbought": {
+          "signals": 85,
+          "correct": 43,
+          "accuracy": 0.5058823529411764
+        },
+        "RSI: oversold": {
+          "signals": 85,
+          "correct": 53,
+          "accuracy": 0.6235294117647059
+        },
+        "Trend: down": {
+          "signals": 712,
+          "correct": 379,
+          "accuracy": 0.5323033707865169
+        },
+        "Trend: flat": {
+          "signals": 252,
+          "correct": 122,
+          "accuracy": 0.48412698412698413
+        },
+        "Trend: up": {
+          "signals": 696,
+          "correct": 362,
+          "accuracy": 0.5201149425287356
+        }
+      },
+      "test_error_groups_diagnostic_only": {
+        "BB: above 0.8": {
+          "signals": 375,
+          "correct": 158,
+          "accuracy": 0.42133333333333334
+        },
+        "BB: below 0.2": {
+          "signals": 342,
+          "correct": 164,
+          "accuracy": 0.47953216374269003
+        },
+        "BB: middle": {
+          "signals": 935,
+          "correct": 443,
+          "accuracy": 0.4737967914438503
+        },
+        "RSI: middle": {
+          "signals": 1485,
+          "correct": 694,
+          "accuracy": 0.46734006734006733
+        },
+        "RSI: overbought": {
+          "signals": 82,
+          "correct": 35,
+          "accuracy": 0.4268292682926829
+        },
+        "RSI: oversold": {
+          "signals": 85,
+          "correct": 36,
+          "accuracy": 0.4235294117647059
+        },
+        "Trend: down": {
+          "signals": 729,
+          "correct": 360,
+          "accuracy": 0.49382716049382713
+        },
+        "Trend: flat": {
+          "signals": 241,
+          "correct": 121,
+          "accuracy": 0.5020746887966805
+        },
+        "Trend: up": {
+          "signals": 682,
+          "correct": 284,
+          "accuracy": 0.41642228739002934
+        }
+      }
+    }
+  },
+  "warning": "The recent test period was inspected in earlier experiments. Test metrics are diagnostic only, not a clean final estimate."
+}

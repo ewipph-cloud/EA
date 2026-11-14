@@ -1,0 +1,1469 @@
+{
+  "dataset": "/root/.copilot/session-state/7b02935e-960c-4df5-a2b3-b80a75c15b4b/files/XAUUSD_M5_HistData_2022-2026.csv",
+  "bars": 334265,
+  "detected_pattern_events": 26953,
+  "split_indices": {
+    "train_end_index": 233985,
+    "validation_end_index": 284125
+  },
+  "execution_assumptions": {
+    "entry": "At signal-bar close; stop checks begin on the next bar.",
+    "take_profit": "None.",
+    "initial_stop": "Entry plus/minus the configured multiple of EWMA M5 range.",
+    "trailing_stop": "Activates after the configured favorable move and follows the best observed price by the configured range multiple. Stop updates become active from the following candle.",
+    "intrabar_ambiguity": "Existing stop is checked before updating the trail from the current candle's high/low; this avoids assuming a favorable intrabar order when OHLC does not reveal the path.",
+    "position_management": "One position per setup strategy; later signals are ignored until exit. Maximum hold is 144 M5 bars, then exit at close.",
+    "costs": "HistData is bid-only; spread, commission, and slippage are excluded."
+  },
+  "strategies": {
+    "resistance_rejection_downtrend": {
+      "sl1.0_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1369,
+            "skipped_while_position_open": 59,
+            "win_rate": 0.5471146822498174,
+            "average_R": 0.01770124684873996,
+            "median_R": 0.06178197953263114,
+            "total_R": 24.233006935925008,
+            "gross_profit_factor": 1.0450268936138498,
+            "max_drawdown_R": 52.924917863822806,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 285,
+            "skipped_while_position_open": 10,
+            "win_rate": 0.5263157894736842,
+            "average_R": -0.025121326829792966,
+            "median_R": 0.04646721785444838,
+            "total_R": -7.159578146490995,
+            "gross_profit_factor": 0.9389677432238324,
+            "max_drawdown_R": 23.85739482402661,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 329,
+            "skipped_while_position_open": 18,
+            "win_rate": 0.5531914893617021,
+            "average_R": 0.041513784245855515,
+            "median_R": 0.06577120177678969,
+            "total_R": 13.658035016886464,
+            "gross_profit_factor": 1.111243891240269,
+            "max_drawdown_R": 16.724173998676456,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1357,
+            "skipped_while_position_open": 71,
+            "win_rate": 0.38909358879882094,
+            "average_R": -0.017395687999557135,
+            "median_R": -0.2669283172347076,
+            "total_R": -23.605948615399033,
+            "gross_profit_factor": 0.9604389480319581,
+            "max_drawdown_R": 74.89703806820495,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 283,
+            "skipped_while_position_open": 12,
+            "win_rate": 0.4028268551236749,
+            "average_R": -0.027554011458789544,
+            "median_R": -0.2633301957292599,
+            "total_R": -7.797785242837441,
+            "gross_profit_factor": 0.9384889045259162,
+            "max_drawdown_R": 27.091510559557705,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 326,
+            "skipped_while_position_open": 21,
+            "win_rate": 0.41411042944785276,
+            "average_R": 0.04492834003892826,
+            "median_R": -0.19207622193654883,
+            "total_R": 14.646638852690613,
+            "gross_profit_factor": 1.105522363704687,
+            "max_drawdown_R": 17.499815247538724,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1344,
+            "skipped_while_position_open": 84,
+            "win_rate": 0.4724702380952381,
+            "average_R": 0.002801030016907201,
+            "median_R": -0.9999999999998168,
+            "total_R": 3.764584342723278,
+            "gross_profit_factor": 1.0054096839801645,
+            "max_drawdown_R": 54.19762943817771,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 278,
+            "skipped_while_position_open": 17,
+            "win_rate": 0.48201438848920863,
+            "average_R": 0.06997891079661928,
+            "median_R": -0.49371752334728447,
+            "total_R": 19.45413720146016,
+            "gross_profit_factor": 1.1388449025618173,
+            "max_drawdown_R": 19.932861657822045,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 317,
+            "skipped_while_position_open": 30,
+            "win_rate": 0.5141955835962145,
+            "average_R": 0.09223082706568393,
+            "median_R": 0.15217217500771674,
+            "total_R": 29.23717217982181,
+            "gross_profit_factor": 1.1881714260724663,
+            "max_drawdown_R": 10.959541775575058,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1338,
+            "skipped_while_position_open": 90,
+            "win_rate": 0.4730941704035874,
+            "average_R": 0.0024819469608803107,
+            "median_R": -0.9999999999998129,
+            "total_R": 3.320845033657856,
+            "gross_profit_factor": 1.0047996214923716,
+            "max_drawdown_R": 62.48456624020835,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 278,
+            "skipped_while_position_open": 17,
+            "win_rate": 0.48201438848920863,
+            "average_R": 0.044162158189099035,
+            "median_R": -0.49371752334728447,
+            "total_R": 12.277079976569532,
+            "gross_profit_factor": 1.087621977548431,
+            "max_drawdown_R": 18.907707213445796,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 315,
+            "skipped_while_position_open": 32,
+            "win_rate": 0.5111111111111111,
+            "average_R": 0.09929286893321373,
+            "median_R": 0.03619712795996736,
+            "total_R": 31.277253713962327,
+            "gross_profit_factor": 1.201301459620932,
+            "max_drawdown_R": 13.449306756815966,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1330,
+            "skipped_while_position_open": 98,
+            "win_rate": 0.6165413533834586,
+            "average_R": 0.013469984687418531,
+            "median_R": 0.09116496142725654,
+            "total_R": 17.915079634266647,
+            "gross_profit_factor": 1.0451611194679604,
+            "max_drawdown_R": 39.861524950492736,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 278,
+            "skipped_while_position_open": 17,
+            "win_rate": 0.6151079136690647,
+            "average_R": 0.03879735050367414,
+            "median_R": 0.11564429132943885,
+            "total_R": 10.78566344002141,
+            "gross_profit_factor": 1.1310603567237878,
+            "max_drawdown_R": 11.539289845133471,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 325,
+            "skipped_while_position_open": 22,
+            "win_rate": 0.6153846153846154,
+            "average_R": 0.01219812630145858,
+            "median_R": 0.0825904244152863,
+            "total_R": 3.9643910479740385,
+            "gross_profit_factor": 1.0425429108127646,
+            "max_drawdown_R": 12.016709146688472,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1317,
+            "skipped_while_position_open": 111,
+            "win_rate": 0.4419134396355353,
+            "average_R": -0.006094948426037566,
+            "median_R": -0.10400216411257328,
+            "total_R": -8.027047077091474,
+            "gross_profit_factor": 0.9817541283839138,
+            "max_drawdown_R": 57.728899389362056,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 275,
+            "skipped_while_position_open": 20,
+            "win_rate": 0.46545454545454545,
+            "average_R": 0.04215131581103671,
+            "median_R": -0.07473769904724133,
+            "total_R": 11.591611848035095,
+            "gross_profit_factor": 1.1309058154255072,
+            "max_drawdown_R": 15.510563030912904,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 322,
+            "skipped_while_position_open": 25,
+            "win_rate": 0.46273291925465837,
+            "average_R": 0.013806520192208332,
+            "median_R": -0.0712457693514817,
+            "total_R": 4.445699501891083,
+            "gross_profit_factor": 1.0424117219906306,
+            "max_drawdown_R": 12.406783050522423,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1287,
+            "skipped_while_position_open": 141,
+            "win_rate": 0.554001554001554,
+            "average_R": -0.015938418138993632,
+            "median_R": 0.29517943322010876,
+            "total_R": -20.512744144884802,
+            "gross_profit_factor": 0.9627556230570712,
+            "max_drawdown_R": 51.91710832324285,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 266,
+            "skipped_while_position_open": 29,
+            "win_rate": 0.5864661654135338,
+            "average_R": 0.11305075867250078,
+            "median_R": 0.3434165879559777,
+            "total_R": 30.071501806885205,
+            "gross_profit_factor": 1.2864235638799733,
+            "max_drawdown_R": 8.3939605886893,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 312,
+            "skipped_while_position_open": 35,
+            "win_rate": 0.592948717948718,
+            "average_R": 0.05201993045433605,
+            "median_R": 0.37719039760061523,
+            "total_R": 16.230218301752846,
+            "gross_profit_factor": 1.1318573629614241,
+            "max_drawdown_R": 10.091114972498053,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1280,
+            "skipped_while_position_open": 148,
+            "win_rate": 0.5546875,
+            "average_R": -0.015355093342763021,
+            "median_R": 0.05869857504737515,
+            "total_R": -19.654519478736667,
+            "gross_profit_factor": 0.9640528029444173,
+            "max_drawdown_R": 63.09068363681993,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 266,
+            "skipped_while_position_open": 29,
+            "win_rate": 0.5864661654135338,
+            "average_R": 0.09316077436880194,
+            "median_R": 0.16326295497543475,
+            "total_R": 24.780765982101315,
+            "gross_profit_factor": 1.236030623074633,
+            "max_drawdown_R": 10.555988340252421,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 310,
+            "skipped_while_position_open": 37,
+            "win_rate": 0.5903225806451613,
+            "average_R": 0.06440690179826233,
+            "median_R": 0.1316068469374844,
+            "total_R": 19.96613955746132,
+            "gross_profit_factor": 1.1622086937846239,
+            "max_drawdown_R": 12.299537837877358,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      }
+    },
+    "confirmed_resistance_breakout": {
+      "sl1.0_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 768,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5208333333333334,
+            "average_R": -0.02380465225208209,
+            "median_R": 0.02563063276600553,
+            "total_R": -18.281972929599046,
+            "gross_profit_factor": 0.9424500218802672,
+            "max_drawdown_R": 44.85633873134691,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 132,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5075757575757576,
+            "average_R": -0.06620129388511141,
+            "median_R": 0.005569870991637778,
+            "total_R": -8.738570792834706,
+            "gross_profit_factor": 0.8424604353927889,
+            "max_drawdown_R": 17.291041843134128,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 165,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4909090909090909,
+            "average_R": 0.041253603977165446,
+            "median_R": -0.07428177585037708,
+            "total_R": 6.806844656232299,
+            "gross_profit_factor": 1.096126247085203,
+            "max_drawdown_R": 12.16515885321774,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 768,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.3815104166666667,
+            "average_R": -0.015420242109715189,
+            "median_R": -0.29246883597385304,
+            "total_R": -11.842745940261265,
+            "gross_profit_factor": 0.9660513290381669,
+            "max_drawdown_R": 51.420528951734596,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 132,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.38636363636363635,
+            "average_R": -0.1036896571210434,
+            "median_R": -0.3350220371642336,
+            "total_R": -13.68703473997773,
+            "gross_profit_factor": 0.7733436846106474,
+            "max_drawdown_R": 21.34939236813941,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 165,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.3939393939393939,
+            "average_R": -0.019860989597267346,
+            "median_R": -0.2727778577593604,
+            "total_R": -3.2770632835491122,
+            "gross_profit_factor": 0.956887054214328,
+            "max_drawdown_R": 19.105498249028237,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 768,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4544270833333333,
+            "average_R": -0.02170761553180046,
+            "median_R": -0.9999999999998722,
+            "total_R": -16.671448728422753,
+            "gross_profit_factor": 0.9587988924121024,
+            "max_drawdown_R": 40.344523044731034,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 132,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.49242424242424243,
+            "average_R": -0.01756883545866659,
+            "median_R": -0.43287341964529674,
+            "total_R": -2.31908628054399,
+            "gross_profit_factor": 0.9650362391258064,
+            "max_drawdown_R": 19.05690991642569,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 165,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.45454545454545453,
+            "average_R": 0.0450969298443643,
+            "median_R": -0.9999999999998704,
+            "total_R": 7.4409934243201095,
+            "gross_profit_factor": 1.0880608136769623,
+            "max_drawdown_R": 13.792011579094876,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 768,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4544270833333333,
+            "average_R": -0.02300869143860032,
+            "median_R": -0.9999999999998722,
+            "total_R": -17.670675024845046,
+            "gross_profit_factor": 0.9563294471458752,
+            "max_drawdown_R": 55.52100653329354,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 132,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.49242424242424243,
+            "average_R": -0.021374757758494012,
+            "median_R": -0.43287341964529674,
+            "total_R": -2.8214680241212093,
+            "gross_profit_factor": 0.9574620685150113,
+            "max_drawdown_R": 19.166653840602784,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 165,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.45454545454545453,
+            "average_R": -0.034777394522999994,
+            "median_R": -0.9999999999998704,
+            "total_R": -5.7382700962949995,
+            "gross_profit_factor": 0.9320901518167796,
+            "max_drawdown_R": 19.642371320297674,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 768,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.58984375,
+            "average_R": -0.010428196551232304,
+            "median_R": 0.08141802321869446,
+            "total_R": -8.00885495134641,
+            "gross_profit_factor": 0.9661677867266018,
+            "max_drawdown_R": 28.7292158409553,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 132,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.6212121212121212,
+            "average_R": 0.07426621805939791,
+            "median_R": 0.14846265827138305,
+            "total_R": 9.803140783840524,
+            "gross_profit_factor": 1.2940236781785721,
+            "max_drawdown_R": 8.969813125850296,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 165,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5515151515151515,
+            "average_R": -0.023036758619828082,
+            "median_R": 0.05037114773147029,
+            "total_R": -3.8010651722716333,
+            "gross_profit_factor": 0.9352084598574624,
+            "max_drawdown_R": 13.73892669534687,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 768,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4361979166666667,
+            "average_R": -0.0064994853076665695,
+            "median_R": -0.09112598846412293,
+            "total_R": -4.991604716287926,
+            "gross_profit_factor": 0.9808649013253775,
+            "max_drawdown_R": 33.36274860126534,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 132,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5,
+            "average_R": 0.06497712566401835,
+            "median_R": -0.001651181452927726,
+            "total_R": 8.576980587650421,
+            "gross_profit_factor": 1.2322704120086594,
+            "max_drawdown_R": 8.351227559591155,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 165,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4303030303030303,
+            "average_R": -0.06533178858519628,
+            "median_R": -0.10758978505349796,
+            "total_R": -10.779745116557386,
+            "gross_profit_factor": 0.828408087702905,
+            "max_drawdown_R": 17.419000653791446,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 767,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5632333767926988,
+            "average_R": 0.011414077810204365,
+            "median_R": 0.29884927209311646,
+            "total_R": 8.754597680426748,
+            "gross_profit_factor": 1.027801177419477,
+            "max_drawdown_R": 27.216327546767033,
+            "stop_exit_rate": 0.9986962190352021,
+            "time_exit_rate": 0.001303780964797914
+          },
+          "validation": {
+            "trades": 131,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.6412213740458015,
+            "average_R": 0.12752623002404348,
+            "median_R": 0.40612331553595704,
+            "total_R": 16.705936133149695,
+            "gross_profit_factor": 1.3821247683240672,
+            "max_drawdown_R": 10.484937977516626,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 164,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5426829268292683,
+            "average_R": 0.007354420495159125,
+            "median_R": 0.28565332584959935,
+            "total_R": 1.2061249612060965,
+            "gross_profit_factor": 1.0175368551766564,
+            "max_drawdown_R": 10.734188284331148,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 767,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5632333767926988,
+            "average_R": 0.012329739811116548,
+            "median_R": 0.09036258653244338,
+            "total_R": 9.456910435126392,
+            "gross_profit_factor": 1.0300314479824546,
+            "max_drawdown_R": 27.10013896111315,
+            "stop_exit_rate": 0.9986962190352021,
+            "time_exit_rate": 0.001303780964797914
+          },
+          "validation": {
+            "trades": 131,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.6412213740458015,
+            "average_R": 0.1291076186909506,
+            "median_R": 0.18209419718283817,
+            "total_R": 16.91309804851453,
+            "gross_profit_factor": 1.3868633054693924,
+            "max_drawdown_R": 10.957520783521243,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 164,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5426829268292683,
+            "average_R": -0.060441899116654624,
+            "median_R": 0.07484955079577213,
+            "total_R": -9.912471455131358,
+            "gross_profit_factor": 0.8558743231899045,
+            "max_drawdown_R": 17.021933361042127,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      }
+    },
+    "confirmed_support_breakdown": {
+      "sl1.0_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 716,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.49441340782122906,
+            "average_R": -0.07018999275329264,
+            "median_R": -0.013360499997180603,
+            "total_R": -50.25603481135754,
+            "gross_profit_factor": 0.8352005666409162,
+            "max_drawdown_R": 61.624543374307294,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5496688741721855,
+            "average_R": 0.0634391164431774,
+            "median_R": 0.06848905094326618,
+            "total_R": 9.579306582919788,
+            "gross_profit_factor": 1.170799307063394,
+            "max_drawdown_R": 14.664415225993755,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 115,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5565217391304348,
+            "average_R": 0.05796457487827295,
+            "median_R": 0.03436334135107532,
+            "total_R": 6.665926111001389,
+            "gross_profit_factor": 1.1570488195056812,
+            "max_drawdown_R": 9.013222028397916,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 716,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.36033519553072624,
+            "average_R": -0.065839980649889,
+            "median_R": -0.3491888702897834,
+            "total_R": -47.14142614532052,
+            "gross_profit_factor": 0.8596975996586848,
+            "max_drawdown_R": 68.36989511109859,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.3841059602649007,
+            "average_R": 0.04188386557794864,
+            "median_R": -0.2575765874443864,
+            "total_R": 6.324463702270244,
+            "gross_profit_factor": 1.0988006277592974,
+            "max_drawdown_R": 20.814841430692113,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 115,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4,
+            "average_R": -0.021586273681504547,
+            "median_R": -0.27141315543600925,
+            "total_R": -2.482421473373023,
+            "gross_profit_factor": 0.9486947556399896,
+            "max_drawdown_R": 8.332340748813223,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 716,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4259776536312849,
+            "average_R": -0.08327449050512127,
+            "median_R": -0.9999999999998977,
+            "total_R": -59.62453520166683,
+            "gross_profit_factor": 0.8478982430121353,
+            "max_drawdown_R": 71.77205909959883,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.47019867549668876,
+            "average_R": 0.014467748376434933,
+            "median_R": -0.9999999999998826,
+            "total_R": 2.184630004841675,
+            "gross_profit_factor": 1.0274757808776753,
+            "max_drawdown_R": 20.51984493911612,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 114,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5263157894736842,
+            "average_R": 0.14844844738596036,
+            "median_R": 0.4209784660373451,
+            "total_R": 16.923123001999482,
+            "gross_profit_factor": 1.3105203497213744,
+            "max_drawdown_R": 6.5707471919004306,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 716,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4259776536312849,
+            "average_R": -0.07280622204459826,
+            "median_R": -0.9999999999998977,
+            "total_R": -52.129254983932356,
+            "gross_profit_factor": 0.867018648502557,
+            "max_drawdown_R": 71.66574393149683,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.47019867549668876,
+            "average_R": 0.012067134319313664,
+            "median_R": -0.9999999999998826,
+            "total_R": 1.8221372822163633,
+            "gross_profit_factor": 1.0229167614581252,
+            "max_drawdown_R": 23.995106120912602,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 114,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5263157894736842,
+            "average_R": 0.04720075522178333,
+            "median_R": 0.05467485047429717,
+            "total_R": 5.3808860952833,
+            "gross_profit_factor": 1.0987332321534764,
+            "max_drawdown_R": 7.518178039219206,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 716,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5698324022346368,
+            "average_R": -0.052656696457264285,
+            "median_R": 0.062189661977600605,
+            "total_R": -37.70219466340123,
+            "gross_profit_factor": 0.8347713814002615,
+            "max_drawdown_R": 43.93667082837184,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.6423841059602649,
+            "average_R": 0.06978370468233491,
+            "median_R": 0.07450646560336012,
+            "total_R": 10.537339407032572,
+            "gross_profit_factor": 1.283548347046642,
+            "max_drawdown_R": 8.673311385051727,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 115,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.6,
+            "average_R": 0.017821546289786955,
+            "median_R": 0.06940396122256272,
+            "total_R": 2.0494778233254998,
+            "gross_profit_factor": 1.0636394403636305,
+            "max_drawdown_R": 7.515295712752921,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 716,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4036312849162011,
+            "average_R": -0.06181111427340734,
+            "median_R": -0.15391472920582766,
+            "total_R": -44.256757819759656,
+            "gross_profit_factor": 0.8254363880669466,
+            "max_drawdown_R": 53.881672806185215,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.4304635761589404,
+            "average_R": 0.04469484883749625,
+            "median_R": -0.0881839809623436,
+            "total_R": 6.748922174461933,
+            "gross_profit_factor": 1.1529799039279918,
+            "max_drawdown_R": 13.703224311162955,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 115,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.41739130434782606,
+            "average_R": -0.0459027978479945,
+            "median_R": -0.12103271895967883,
+            "total_R": -5.2788217525193675,
+            "gross_profit_factor": 0.8567173070066288,
+            "max_drawdown_R": 8.874098383047748,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 715,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5146853146853146,
+            "average_R": -0.08348407374104382,
+            "median_R": 0.09152113619145827,
+            "total_R": -59.69111272484633,
+            "gross_profit_factor": 0.8140235881847367,
+            "max_drawdown_R": 66.78946199013438,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5960264900662252,
+            "average_R": 0.06745480596882315,
+            "median_R": 0.280259126862531,
+            "total_R": 10.185675701292297,
+            "gross_profit_factor": 1.1696808385456257,
+            "max_drawdown_R": 8.772341099784844,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 114,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.6228070175438597,
+            "average_R": 0.12720362943427171,
+            "median_R": 0.37304953374589267,
+            "total_R": 14.501213755506976,
+            "gross_profit_factor": 1.3549710126210792,
+            "max_drawdown_R": 6.466683195719186,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 715,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.5132867132867133,
+            "average_R": -0.07912805774828655,
+            "median_R": 0.027124754970146814,
+            "total_R": -56.57656129002488,
+            "gross_profit_factor": 0.8238167890968954,
+            "max_drawdown_R": 62.86267059565453,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 151,
+            "skipped_while_position_open": 0,
+            "win_rate": 0.5960264900662252,
+            "average_R": 0.0650404510728679,
+            "median_R": 0.12513995477755263,
+            "total_R": 9.821108112003055,
+            "gross_profit_factor": 1.1636075905774708,
+            "max_drawdown_R": 10.514229405152783,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 114,
+            "skipped_while_position_open": 1,
+            "win_rate": 0.6228070175438597,
+            "average_R": 0.08280256019648662,
+            "median_R": 0.2603537497532719,
+            "total_R": 9.439491862399475,
+            "gross_profit_factor": 1.231066588046942,
+            "max_drawdown_R": 9.288956155220808,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      }
+    },
+    "support_rejection_uptrend": {
+      "sl1.0_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1417,
+            "skipped_while_position_open": 52,
+            "win_rate": 0.5236414961185604,
+            "average_R": -0.04851060711308327,
+            "median_R": 0.02744608003156011,
+            "total_R": -68.73953027923899,
+            "gross_profit_factor": 0.8842119250963265,
+            "max_drawdown_R": 104.55987461273847,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 291,
+            "skipped_while_position_open": 10,
+            "win_rate": 0.5910652920962199,
+            "average_R": 0.03953383871709666,
+            "median_R": 0.08117062015479187,
+            "total_R": 11.504347066675129,
+            "gross_profit_factor": 1.1084553233063332,
+            "max_drawdown_R": 14.072107221552772,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 244,
+            "skipped_while_position_open": 6,
+            "win_rate": 0.5040983606557377,
+            "average_R": 0.00934529000183142,
+            "median_R": 0.0010581966134452906,
+            "total_R": 2.2802507604468665,
+            "gross_profit_factor": 1.0216312023083702,
+            "max_drawdown_R": 25.39992402566895,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1404,
+            "skipped_while_position_open": 65,
+            "win_rate": 0.37606837606837606,
+            "average_R": -0.023128385258669823,
+            "median_R": -0.30043684451094194,
+            "total_R": -32.47225290317243,
+            "gross_profit_factor": 0.9498797183979427,
+            "max_drawdown_R": 97.33650751866108,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 289,
+            "skipped_while_position_open": 12,
+            "win_rate": 0.39100346020761245,
+            "average_R": 0.0791618218254339,
+            "median_R": -0.2599019197985581,
+            "total_R": 22.877766507550398,
+            "gross_profit_factor": 1.1877522824195514,
+            "max_drawdown_R": 12.359514234868692,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 244,
+            "skipped_while_position_open": 6,
+            "win_rate": 0.38934426229508196,
+            "average_R": -0.0025277297072763645,
+            "median_R": -0.26904357882837315,
+            "total_R": -0.6167660485754329,
+            "gross_profit_factor": 0.9946440794686945,
+            "max_drawdown_R": 37.787541286085585,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1385,
+            "skipped_while_position_open": 84,
+            "win_rate": 0.4375451263537906,
+            "average_R": -0.06322615602177516,
+            "median_R": -0.999999999999885,
+            "total_R": -87.56822609015859,
+            "gross_profit_factor": 0.8857939819982426,
+            "max_drawdown_R": 125.16236364774704,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 279,
+            "skipped_while_position_open": 22,
+            "win_rate": 0.4731182795698925,
+            "average_R": 0.03419431009758822,
+            "median_R": -0.99999999999985,
+            "total_R": 9.540212517227113,
+            "gross_profit_factor": 1.066188632822165,
+            "max_drawdown_R": 15.169223753266547,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 241,
+            "skipped_while_position_open": 9,
+            "win_rate": 0.4730290456431535,
+            "average_R": 0.037356069312213885,
+            "median_R": -0.9999999999998896,
+            "total_R": 9.002812704243546,
+            "gross_profit_factor": 1.0717458767340762,
+            "max_drawdown_R": 24.079221164472788,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.0_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.0,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1373,
+            "skipped_while_position_open": 96,
+            "win_rate": 0.43918426802621996,
+            "average_R": -0.047256087753435,
+            "median_R": -0.9999999999998846,
+            "total_R": -64.88260848546625,
+            "gross_profit_factor": 0.914375404362199,
+            "max_drawdown_R": 114.05494150965234,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 278,
+            "skipped_while_position_open": 23,
+            "win_rate": 0.4712230215827338,
+            "average_R": 0.08668978613511459,
+            "median_R": -0.9999999999998532,
+            "total_R": 24.099760545561857,
+            "gross_profit_factor": 1.167200699038088,
+            "max_drawdown_R": 18.036734540295498,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 241,
+            "skipped_while_position_open": 9,
+            "win_rate": 0.4730290456431535,
+            "average_R": 0.04118049192959508,
+            "median_R": -0.9999999999998896,
+            "total_R": 9.924498555032415,
+            "gross_profit_factor": 1.07909104336262,
+            "max_drawdown_R": 29.566517829822853,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1394,
+            "skipped_while_position_open": 75,
+            "win_rate": 0.5882352941176471,
+            "average_R": -0.05009194873575063,
+            "median_R": 0.07496451796157724,
+            "total_R": -69.82817653763638,
+            "gross_profit_factor": 0.8455857000358381,
+            "max_drawdown_R": 86.89557444224872,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 285,
+            "skipped_while_position_open": 16,
+            "win_rate": 0.6456140350877193,
+            "average_R": -0.014052323281751503,
+            "median_R": 0.0823498409026208,
+            "total_R": -4.004912135299178,
+            "gross_profit_factor": 0.9528759144698978,
+            "max_drawdown_R": 15.533479702461008,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 240,
+            "skipped_while_position_open": 10,
+            "win_rate": 0.5708333333333333,
+            "average_R": 0.00541551259652119,
+            "median_R": 0.10358071354047527,
+            "total_R": 1.2997230231650856,
+            "gross_profit_factor": 1.0162554819857956,
+            "max_drawdown_R": 14.855188387489873,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate0.5_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 0.5,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1379,
+            "skipped_while_position_open": 90,
+            "win_rate": 0.4242204496011603,
+            "average_R": -0.03596734141651506,
+            "median_R": -0.12712411940951324,
+            "total_R": -49.59896381337427,
+            "gross_profit_factor": 0.8995548239038066,
+            "max_drawdown_R": 82.03145556973928,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 283,
+            "skipped_while_position_open": 18,
+            "win_rate": 0.4204946996466431,
+            "average_R": 0.017677523170426215,
+            "median_R": -0.13998156296157646,
+            "total_R": 5.002739057230619,
+            "gross_profit_factor": 1.0518374438242781,
+            "max_drawdown_R": 13.95148930386073,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 240,
+            "skipped_while_position_open": 10,
+            "win_rate": 0.44166666666666665,
+            "average_R": -0.006131162173639287,
+            "median_R": -0.13041356163371975,
+            "total_R": -1.4714789216734288,
+            "gross_profit_factor": 0.9830895046007658,
+            "max_drawdown_R": 20.317182752310714,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap0.5": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 0.5
+        },
+        "splits": {
+          "train": {
+            "trades": 1338,
+            "skipped_while_position_open": 131,
+            "win_rate": 0.523916292974589,
+            "average_R": -0.06998526513582704,
+            "median_R": 0.21106281109291541,
+            "total_R": -93.64028475173657,
+            "gross_profit_factor": 0.8469561696035531,
+            "max_drawdown_R": 104.27133319842163,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 265,
+            "skipped_while_position_open": 36,
+            "win_rate": 0.5547169811320755,
+            "average_R": -0.004255635805014471,
+            "median_R": 0.3402674725976301,
+            "total_R": -1.1277434883288346,
+            "gross_profit_factor": 0.9900711873525011,
+            "max_drawdown_R": 13.746706936212803,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 233,
+            "skipped_while_position_open": 17,
+            "win_rate": 0.5407725321888412,
+            "average_R": -0.012843836325214299,
+            "median_R": 0.20927812388062597,
+            "total_R": -2.9926138637749315,
+            "gross_profit_factor": 0.9709109079680447,
+            "max_drawdown_R": 20.19664383671449,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      },
+      "sl1.5_activate1.0_gap1.0": {
+        "parameters": {
+          "initial_sl": 1.5,
+          "trail_activation": 1.0,
+          "trail_gap": 1.0
+        },
+        "splits": {
+          "train": {
+            "trades": 1324,
+            "skipped_while_position_open": 145,
+            "win_rate": 0.525679758308157,
+            "average_R": -0.05556481372094219,
+            "median_R": 0.0276986438781281,
+            "total_R": -73.56781336652746,
+            "gross_profit_factor": 0.8779671879174974,
+            "max_drawdown_R": 88.09546175952696,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "validation": {
+            "trades": 264,
+            "skipped_while_position_open": 37,
+            "win_rate": 0.553030303030303,
+            "average_R": 0.030650367359233273,
+            "median_R": 0.058817947662778605,
+            "total_R": 8.091696982837584,
+            "gross_profit_factor": 1.0712404409108862,
+            "max_drawdown_R": 17.703707014732412,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          },
+          "test_diagnostic_only": {
+            "trades": 233,
+            "skipped_while_position_open": 17,
+            "win_rate": 0.5407725321888412,
+            "average_R": -0.010967559095864802,
+            "median_R": 0.031131082935299526,
+            "total_R": -2.555441269336499,
+            "gross_profit_factor": 0.9751603549105335,
+            "max_drawdown_R": 16.99385745215343,
+            "stop_exit_rate": 1.0,
+            "time_exit_rate": 0.0
+          }
+        }
+      }
+    }
+  },
+  "warning": "Stop parameters are a research grid, not optimized live settings. Validation and test results are exploratory; test period was previously inspected. Gross R is not net profitability."
+}

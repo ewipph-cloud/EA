@@ -1,0 +1,2569 @@
+{
+  "dataset": "/root/.copilot/session-state/7b02935e-960c-4df5-a2b3-b80a75c15b4b/files/XAUUSD_M5_HistData_2022-2026_clean.csv",
+  "m1_source": "Existing local HistData archives",
+  "m1_archives": 15,
+  "m1_unique_bars": 1673721,
+  "m1_duplicate_rows_skipped": 1848,
+  "m1_conflicting_timestamps_skipped": 1491,
+  "m5_bars": 334217,
+  "setup": "support_rejection_uptrend",
+  "swing_scale": 0.75,
+  "selection_policy": {
+    "selected_on": "train split only",
+    "objective": "Highest average net R after a hypothetical 0.02R round-trip cost",
+    "minimum_train_trades": 100,
+    "grid_size": 192
+  },
+  "best_train_selected_configuration": {
+    "config": {
+      "initial_sl": 0.5,
+      "trail_activation": 0.25,
+      "trail_gap": 0.75
+    },
+    "max_hold_m1_bars": 30,
+    "splits": {
+      "train": {
+        "cost_0R": {
+          "trades": 4726,
+          "average_net_R": 0.05685222147960418,
+          "total_net_R": 268.68359871260935,
+          "net_profit_factor": 1.108712674194355,
+          "max_drawdown_net_R": 61.12462088572198
+        },
+        "cost_0.01R": {
+          "trades": 4726,
+          "average_net_R": 0.0468522214796042,
+          "total_net_R": 221.42359871260945,
+          "net_profit_factor": 1.0884828220798608,
+          "max_drawdown_net_R": 67.19462088572175
+        },
+        "cost_0.02R": {
+          "trades": 4726,
+          "average_net_R": 0.03685222147960418,
+          "total_net_R": 174.16359871260937,
+          "net_profit_factor": 1.06874470390348,
+          "max_drawdown_net_R": 73.26462088572174
+        },
+        "cost_0.05R": {
+          "trades": 4726,
+          "average_net_R": 0.006852221479604171,
+          "total_net_R": 32.38359871260931,
+          "net_profit_factor": 1.012326434378988,
+          "max_drawdown_net_R": 104.20696944465591
+        },
+        "cost_0.1R": {
+          "trades": 4726,
+          "average_net_R": -0.04314777852039585,
+          "total_net_R": -203.91640128739078,
+          "net_profit_factor": 0.9267748105612424,
+          "max_drawdown_net_R": 270.99358061445486
+        }
+      },
+      "validation": {
+        "cost_0R": {
+          "trades": 960,
+          "average_net_R": 0.02476822040688572,
+          "total_net_R": 23.777491590610293,
+          "net_profit_factor": 1.0483565445334557,
+          "max_drawdown_net_R": 40.91003638407782
+        },
+        "cost_0.01R": {
+          "trades": 960,
+          "average_net_R": 0.01476822040688574,
+          "total_net_R": 14.17749159061031,
+          "net_profit_factor": 1.0284733327188291,
+          "max_drawdown_net_R": 42.68003638407784
+        },
+        "cost_0.02R": {
+          "trades": 960,
+          "average_net_R": 0.004768220406885724,
+          "total_net_R": 4.577491590610295,
+          "net_profit_factor": 1.0090796574398766,
+          "max_drawdown_net_R": 44.45003638407782
+        },
+        "cost_0.05R": {
+          "trades": 960,
+          "average_net_R": -0.025231779593114283,
+          "total_net_R": -24.22250840938971,
+          "net_profit_factor": 0.9536811759048783,
+          "max_drawdown_net_R": 49.76003638407783
+        },
+        "cost_0.1R": {
+          "trades": 960,
+          "average_net_R": -0.0752317795931143,
+          "total_net_R": -72.22250840938973,
+          "net_profit_factor": 0.8698065894958584,
+          "max_drawdown_net_R": 81.18886604655485
+        }
+      },
+      "test_diagnostic_only": {
+        "cost_0R": {
+          "trades": 845,
+          "average_net_R": -0.0011638831826089784,
+          "total_net_R": -0.9834812893045867,
+          "net_profit_factor": 0.9977702952776886,
+          "max_drawdown_net_R": 55.33101867604378
+        },
+        "cost_0.01R": {
+          "trades": 845,
+          "average_net_R": -0.011163883182608959,
+          "total_net_R": -9.43348128930457,
+          "net_profit_factor": 0.978880448403916,
+          "max_drawdown_net_R": 60.05101867604377
+        },
+        "cost_0.02R": {
+          "trades": 845,
+          "average_net_R": -0.02116388318260897,
+          "total_net_R": -17.88348128930458,
+          "net_profit_factor": 0.9604607885299409,
+          "max_drawdown_net_R": 64.77101867604378
+        },
+        "cost_0.05R": {
+          "trades": 845,
+          "average_net_R": -0.051163883182608984,
+          "total_net_R": -43.23348128930459,
+          "net_profit_factor": 0.9078761770969004,
+          "max_drawdown_net_R": 78.93101867604373
+        },
+        "cost_0.1R": {
+          "trades": 845,
+          "average_net_R": -0.10116388318260901,
+          "total_net_R": -85.4834812893046,
+          "net_profit_factor": 0.8283291845889406,
+          "max_drawdown_net_R": 102.5310186760438
+        }
+      }
+    }
+  },
+  "top_20_training_configurations": [
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.25,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 30,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4726,
+            "average_net_R": 0.05685222147960418,
+            "total_net_R": 268.68359871260935,
+            "net_profit_factor": 1.108712674194355,
+            "max_drawdown_net_R": 61.12462088572198
+          },
+          "cost_0.01R": {
+            "trades": 4726,
+            "average_net_R": 0.0468522214796042,
+            "total_net_R": 221.42359871260945,
+            "net_profit_factor": 1.0884828220798608,
+            "max_drawdown_net_R": 67.19462088572175
+          },
+          "cost_0.02R": {
+            "trades": 4726,
+            "average_net_R": 0.03685222147960418,
+            "total_net_R": 174.16359871260937,
+            "net_profit_factor": 1.06874470390348,
+            "max_drawdown_net_R": 73.26462088572174
+          },
+          "cost_0.05R": {
+            "trades": 4726,
+            "average_net_R": 0.006852221479604171,
+            "total_net_R": 32.38359871260931,
+            "net_profit_factor": 1.012326434378988,
+            "max_drawdown_net_R": 104.20696944465591
+          },
+          "cost_0.1R": {
+            "trades": 4726,
+            "average_net_R": -0.04314777852039585,
+            "total_net_R": -203.91640128739078,
+            "net_profit_factor": 0.9267748105612424,
+            "max_drawdown_net_R": 270.99358061445486
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 960,
+            "average_net_R": 0.02476822040688572,
+            "total_net_R": 23.777491590610293,
+            "net_profit_factor": 1.0483565445334557,
+            "max_drawdown_net_R": 40.91003638407782
+          },
+          "cost_0.01R": {
+            "trades": 960,
+            "average_net_R": 0.01476822040688574,
+            "total_net_R": 14.17749159061031,
+            "net_profit_factor": 1.0284733327188291,
+            "max_drawdown_net_R": 42.68003638407784
+          },
+          "cost_0.02R": {
+            "trades": 960,
+            "average_net_R": 0.004768220406885724,
+            "total_net_R": 4.577491590610295,
+            "net_profit_factor": 1.0090796574398766,
+            "max_drawdown_net_R": 44.45003638407782
+          },
+          "cost_0.05R": {
+            "trades": 960,
+            "average_net_R": -0.025231779593114283,
+            "total_net_R": -24.22250840938971,
+            "net_profit_factor": 0.9536811759048783,
+            "max_drawdown_net_R": 49.76003638407783
+          },
+          "cost_0.1R": {
+            "trades": 960,
+            "average_net_R": -0.0752317795931143,
+            "total_net_R": -72.22250840938973,
+            "net_profit_factor": 0.8698065894958584,
+            "max_drawdown_net_R": 81.18886604655485
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 845,
+            "average_net_R": -0.0011638831826089784,
+            "total_net_R": -0.9834812893045867,
+            "net_profit_factor": 0.9977702952776886,
+            "max_drawdown_net_R": 55.33101867604378
+          },
+          "cost_0.01R": {
+            "trades": 845,
+            "average_net_R": -0.011163883182608959,
+            "total_net_R": -9.43348128930457,
+            "net_profit_factor": 0.978880448403916,
+            "max_drawdown_net_R": 60.05101867604377
+          },
+          "cost_0.02R": {
+            "trades": 845,
+            "average_net_R": -0.02116388318260897,
+            "total_net_R": -17.88348128930458,
+            "net_profit_factor": 0.9604607885299409,
+            "max_drawdown_net_R": 64.77101867604378
+          },
+          "cost_0.05R": {
+            "trades": 845,
+            "average_net_R": -0.051163883182608984,
+            "total_net_R": -43.23348128930459,
+            "net_profit_factor": 0.9078761770969004,
+            "max_drawdown_net_R": 78.93101867604373
+          },
+          "cost_0.1R": {
+            "trades": 845,
+            "average_net_R": -0.10116388318260901,
+            "total_net_R": -85.4834812893046,
+            "net_profit_factor": 0.8283291845889406,
+            "max_drawdown_net_R": 102.5310186760438
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.5,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 30,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4716,
+            "average_net_R": 0.05632448572503364,
+            "total_net_R": 265.62627467925864,
+            "net_profit_factor": 1.1030254882798192,
+            "max_drawdown_net_R": 61.44034740001226
+          },
+          "cost_0.01R": {
+            "trades": 4716,
+            "average_net_R": 0.04632448572503368,
+            "total_net_R": 218.46627467925882,
+            "net_profit_factor": 1.0837483769532494,
+            "max_drawdown_net_R": 67.49034740001233
+          },
+          "cost_0.02R": {
+            "trades": 4716,
+            "average_net_R": 0.03632448572503366,
+            "total_net_R": 171.30627467925873,
+            "net_profit_factor": 1.0649123531075773,
+            "max_drawdown_net_R": 73.54034740001194
+          },
+          "cost_0.05R": {
+            "trades": 4716,
+            "average_net_R": 0.0063244857250336455,
+            "total_net_R": 29.82627467925867,
+            "net_profit_factor": 1.0109216845454148,
+            "max_drawdown_net_R": 99.60988917575949
+          },
+          "cost_0.1R": {
+            "trades": 4716,
+            "average_net_R": -0.04367551427496639,
+            "total_net_R": -205.9737253207415,
+            "net_profit_factor": 0.9286197264418682,
+            "max_drawdown_net_R": 264.1417629028056
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 959,
+            "average_net_R": 0.028038879674395913,
+            "total_net_R": 26.88928560774568,
+            "net_profit_factor": 1.0523203270508914,
+            "max_drawdown_net_R": 39.992306777780776
+          },
+          "cost_0.01R": {
+            "trades": 959,
+            "average_net_R": 0.018038879674395936,
+            "total_net_R": 17.299285607745702,
+            "net_profit_factor": 1.0332636660979304,
+            "max_drawdown_net_R": 41.65230677778077
+          },
+          "cost_0.02R": {
+            "trades": 959,
+            "average_net_R": 0.008038879674395918,
+            "total_net_R": 7.709285607745685,
+            "net_profit_factor": 1.0146505368608933,
+            "max_drawdown_net_R": 43.312306777780776
+          },
+          "cost_0.05R": {
+            "trades": 959,
+            "average_net_R": -0.02196112032560409,
+            "total_net_R": -21.060714392254322,
+            "net_profit_factor": 0.96134056104217,
+            "max_drawdown_net_R": 50.155022703322366
+          },
+          "cost_0.1R": {
+            "trades": 959,
+            "average_net_R": -0.07196112032560413,
+            "total_net_R": -69.01071439225436,
+            "net_profit_factor": 0.8802222148828087,
+            "max_drawdown_net_R": 82.20377695695642
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 842,
+            "average_net_R": 0.013361189883891064,
+            "total_net_R": 11.250121882236275,
+            "net_profit_factor": 1.0249498880543528,
+            "max_drawdown_net_R": 50.48485042723382
+          },
+          "cost_0.01R": {
+            "trades": 842,
+            "average_net_R": 0.003361189883891089,
+            "total_net_R": 2.830121882236297,
+            "net_profit_factor": 1.0062022206326235,
+            "max_drawdown_net_R": 55.17485042723378
+          },
+          "cost_0.02R": {
+            "trades": 842,
+            "average_net_R": -0.006638810116108925,
+            "total_net_R": -5.589878117763715,
+            "net_profit_factor": 0.9878940063472108,
+            "max_drawdown_net_R": 59.864850427233826
+          },
+          "cost_0.05R": {
+            "trades": 842,
+            "average_net_R": -0.036638810116108936,
+            "total_net_R": -30.849878117763726,
+            "net_profit_factor": 0.9354853872462907,
+            "max_drawdown_net_R": 73.93485042723373
+          },
+          "cost_0.1R": {
+            "trades": 842,
+            "average_net_R": -0.08663881011610898,
+            "total_net_R": -72.94987811776376,
+            "net_profit_factor": 0.8558122784828289,
+            "max_drawdown_net_R": 97.38485042723386
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.5,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 90,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4709,
+            "average_net_R": 0.055469881029595394,
+            "total_net_R": 261.2076697683647,
+            "net_profit_factor": 1.1013300495610219,
+            "max_drawdown_net_R": 64.69925146402133
+          },
+          "cost_0.01R": {
+            "trades": 4709,
+            "average_net_R": 0.04546988102959542,
+            "total_net_R": 214.11766976836483,
+            "net_profit_factor": 1.0820963661720666,
+            "max_drawdown_net_R": 70.73925146402124
+          },
+          "cost_0.02R": {
+            "trades": 4709,
+            "average_net_R": 0.035469881029595404,
+            "total_net_R": 167.02766976836477,
+            "net_profit_factor": 1.0633027626817697,
+            "max_drawdown_net_R": 76.77925146402077
+          },
+          "cost_0.05R": {
+            "trades": 4709,
+            "average_net_R": 0.005469881029595391,
+            "total_net_R": 25.757669768364696,
+            "net_profit_factor": 1.0094336271558226,
+            "max_drawdown_net_R": 110.64158375112781
+          },
+          "cost_0.1R": {
+            "trades": 4709,
+            "average_net_R": -0.04453011897040464,
+            "total_net_R": -209.69233023163545,
+            "net_profit_factor": 0.9273190234092519,
+            "max_drawdown_net_R": 266.8881160238585
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 957,
+            "average_net_R": 0.03634643961584276,
+            "total_net_R": 34.78354271236152,
+            "net_profit_factor": 1.0677214541853732,
+            "max_drawdown_net_R": 34.98997609273496
+          },
+          "cost_0.01R": {
+            "trades": 957,
+            "average_net_R": 0.02634643961584279,
+            "total_net_R": 25.213542712361548,
+            "net_profit_factor": 1.0485103056971732,
+            "max_drawdown_net_R": 36.64997609273495
+          },
+          "cost_0.02R": {
+            "trades": 957,
+            "average_net_R": 0.016346439615842773,
+            "total_net_R": 15.643542712361533,
+            "net_profit_factor": 1.029746076840094,
+            "max_drawdown_net_R": 38.309976092734956
+          },
+          "cost_0.05R": {
+            "trades": 957,
+            "average_net_R": -0.013653560384157241,
+            "total_net_R": -13.06645728763848,
+            "net_profit_factor": 0.9760013516119656,
+            "max_drawdown_net_R": 46.04815290193281
+          },
+          "cost_0.1R": {
+            "trades": 957,
+            "average_net_R": -0.06365356038415727,
+            "total_net_R": -60.91645728763851,
+            "net_profit_factor": 0.8942209180616729,
+            "max_drawdown_net_R": 73.5243122253713
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 840,
+            "average_net_R": 0.007636952939815617,
+            "total_net_R": 6.415040469445118,
+            "net_profit_factor": 1.0142232852641495,
+            "max_drawdown_net_R": 52.73324311662414
+          },
+          "cost_0.01R": {
+            "trades": 840,
+            "average_net_R": -0.002363047060184359,
+            "total_net_R": -1.9849595305548613,
+            "net_profit_factor": 0.9956511475654544,
+            "max_drawdown_net_R": 57.41324311662409
+          },
+          "cost_0.02R": {
+            "trades": 840,
+            "average_net_R": -0.012363047060184373,
+            "total_net_R": -10.384959530554873,
+            "net_profit_factor": 0.9775158821453424,
+            "max_drawdown_net_R": 62.09324311662414
+          },
+          "cost_0.05R": {
+            "trades": 840,
+            "average_net_R": -0.042363047060184386,
+            "total_net_R": -35.58495953055488,
+            "net_profit_factor": 0.9256088642135563,
+            "max_drawdown_net_R": 76.13324311662404
+          },
+          "cost_0.1R": {
+            "trades": 840,
+            "average_net_R": -0.09236304706018442,
+            "total_net_R": -77.58495953055491,
+            "net_profit_factor": 0.8467160665255759,
+            "max_drawdown_net_R": 99.53324311662415
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.25,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 90,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4723,
+            "average_net_R": 0.05525882961372772,
+            "total_net_R": 260.987452265636,
+            "net_profit_factor": 1.1055507534290365,
+            "max_drawdown_net_R": 65.53897864549964
+          },
+          "cost_0.01R": {
+            "trades": 4723,
+            "average_net_R": 0.04525882961372774,
+            "total_net_R": 213.75745226563612,
+            "net_profit_factor": 1.0853803602043772,
+            "max_drawdown_net_R": 71.59897864549924
+          },
+          "cost_0.02R": {
+            "trades": 4723,
+            "average_net_R": 0.03525882961372773,
+            "total_net_R": 166.52745226563604,
+            "net_profit_factor": 1.0657004513957116,
+            "max_drawdown_net_R": 80.59336836230639
+          },
+          "cost_0.05R": {
+            "trades": 4723,
+            "average_net_R": 0.0052588296137277115,
+            "total_net_R": 24.83745226563598,
+            "net_profit_factor": 1.0094496833685922,
+            "max_drawdown_net_R": 117.37336836230621
+          },
+          "cost_0.1R": {
+            "trades": 4723,
+            "average_net_R": -0.04474117038627231,
+            "total_net_R": -211.3125477343641,
+            "net_profit_factor": 0.9241558227789047,
+            "max_drawdown_net_R": 276.0120241453275
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 958,
+            "average_net_R": 0.03276166670378123,
+            "total_net_R": 31.38567670222242,
+            "net_profit_factor": 1.0638695429456768,
+            "max_drawdown_net_R": 35.90770569903201
+          },
+          "cost_0.01R": {
+            "trades": 958,
+            "average_net_R": 0.022761666703781252,
+            "total_net_R": 21.80567670222244,
+            "net_profit_factor": 1.0438205834197742,
+            "max_drawdown_net_R": 37.677705699032
+          },
+          "cost_0.02R": {
+            "trades": 958,
+            "average_net_R": 0.012761666703781238,
+            "total_net_R": 12.225676702222426,
+            "net_profit_factor": 1.0242650486205485,
+            "max_drawdown_net_R": 39.44770569903202
+          },
+          "cost_0.05R": {
+            "trades": 958,
+            "average_net_R": -0.017238333296218777,
+            "total_net_R": -16.514323297777587,
+            "net_profit_factor": 0.9684022642495,
+            "max_drawdown_net_R": 44.75770569903201
+          },
+          "cost_0.1R": {
+            "trades": 958,
+            "average_net_R": -0.06723833329621878,
+            "total_net_R": -64.4143232977776,
+            "net_profit_factor": 0.8838251235474323,
+            "max_drawdown_net_R": 73.38068093494272
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 844,
+            "average_net_R": -0.006873157554769768,
+            "total_net_R": -5.800944976225684,
+            "net_profit_factor": 0.9868517887128228,
+            "max_drawdown_net_R": 57.56179363956404
+          },
+          "cost_0.01R": {
+            "trades": 844,
+            "average_net_R": -0.016873157554769747,
+            "total_net_R": -14.240944976225666,
+            "net_profit_factor": 0.9681264906261171,
+            "max_drawdown_net_R": 62.281793639564
+          },
+          "cost_0.02R": {
+            "trades": 844,
+            "average_net_R": -0.02687315755476976,
+            "total_net_R": -22.68094497622568,
+            "net_profit_factor": 0.9498688840878715,
+            "max_drawdown_net_R": 67.00179363956406
+          },
+          "cost_0.05R": {
+            "trades": 844,
+            "average_net_R": -0.05687315755476977,
+            "total_net_R": -48.00094497622569,
+            "net_profit_factor": 0.8977534262750069,
+            "max_drawdown_net_R": 81.161793639564
+          },
+          "cost_0.1R": {
+            "trades": 844,
+            "average_net_R": -0.10687315755476978,
+            "total_net_R": -90.2009449762257,
+            "net_profit_factor": 0.8189336334623933,
+            "max_drawdown_net_R": 104.76179363956408
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.5,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 60,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4710,
+            "average_net_R": 0.05512997442047613,
+            "total_net_R": 259.6621795204426,
+            "net_profit_factor": 1.1006887936912932,
+            "max_drawdown_net_R": 66.04941361282394
+          },
+          "cost_0.01R": {
+            "trades": 4710,
+            "average_net_R": 0.04512997442047616,
+            "total_net_R": 212.5621795204427,
+            "net_profit_factor": 1.0814659812611618,
+            "max_drawdown_net_R": 72.09941361282384
+          },
+          "cost_0.02R": {
+            "trades": 4710,
+            "average_net_R": 0.03512997442047614,
+            "total_net_R": 165.46217952044262,
+            "net_profit_factor": 1.062683126880838,
+            "max_drawdown_net_R": 78.14941361282351
+          },
+          "cost_0.05R": {
+            "trades": 4710,
+            "average_net_R": 0.005129974420476126,
+            "total_net_R": 24.162179520442553,
+            "net_profit_factor": 1.008845502444205,
+            "max_drawdown_net_R": 112.57922848526545
+          },
+          "cost_0.1R": {
+            "trades": 4710,
+            "average_net_R": -0.0448700255795239,
+            "total_net_R": -211.3378204795576,
+            "net_profit_factor": 0.9267808629183358,
+            "max_drawdown_net_R": 268.85415990096965
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 957,
+            "average_net_R": 0.036654826677123754,
+            "total_net_R": 35.078669130007434,
+            "net_profit_factor": 1.0682960474732615,
+            "max_drawdown_net_R": 37.31013241049408
+          },
+          "cost_0.01R": {
+            "trades": 957,
+            "average_net_R": 0.02665482667712378,
+            "total_net_R": 25.50866913000746,
+            "net_profit_factor": 1.0490781224812975,
+            "max_drawdown_net_R": 38.97013241049407
+          },
+          "cost_0.02R": {
+            "trades": 957,
+            "average_net_R": 0.016654826677123764,
+            "total_net_R": 15.938669130007444,
+            "net_profit_factor": 1.0303072574663914,
+            "max_drawdown_net_R": 40.63013241049407
+          },
+          "cost_0.05R": {
+            "trades": 957,
+            "average_net_R": -0.013345173322876247,
+            "total_net_R": -12.771330869992568,
+            "net_profit_factor": 0.9765433987002613,
+            "max_drawdown_net_R": 47.836791567283214
+          },
+          "cost_0.1R": {
+            "trades": 957,
+            "average_net_R": -0.06334517332287627,
+            "total_net_R": -60.6213308699926,
+            "net_profit_factor": 0.8947333937193911,
+            "max_drawdown_net_R": 73.22918580772541
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 841,
+            "average_net_R": 0.007870745067304754,
+            "total_net_R": 6.619296601603298,
+            "net_profit_factor": 1.0146761574242669,
+            "max_drawdown_net_R": 52.73324311662414
+          },
+          "cost_0.01R": {
+            "trades": 841,
+            "average_net_R": -0.0021292549326952215,
+            "total_net_R": -1.7907033983966811,
+            "net_profit_factor": 0.9960767437754816,
+            "max_drawdown_net_R": 57.41324311662409
+          },
+          "cost_0.02R": {
+            "trades": 841,
+            "average_net_R": -0.012129254932695236,
+            "total_net_R": -10.200703398396694,
+            "net_profit_factor": 0.9779148087447863,
+            "max_drawdown_net_R": 62.09324311662414
+          },
+          "cost_0.05R": {
+            "trades": 841,
+            "average_net_R": -0.04212925493269525,
+            "total_net_R": -35.43070339839671,
+            "net_profit_factor": 0.9259313400298745,
+            "max_drawdown_net_R": 76.13324311662404
+          },
+          "cost_0.1R": {
+            "trades": 841,
+            "average_net_R": -0.09212925493269528,
+            "total_net_R": -77.48070339839673,
+            "net_profit_factor": 0.8469220444641187,
+            "max_drawdown_net_R": 99.53324311662415
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.25,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 60,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4724,
+            "average_net_R": 0.054919975024918265,
+            "total_net_R": 259.4419620177139,
+            "net_profit_factor": 1.1048804132430892,
+            "max_drawdown_net_R": 66.8891407943023
+          },
+          "cost_0.01R": {
+            "trades": 4724,
+            "average_net_R": 0.044919975024918284,
+            "total_net_R": 212.20196201771398,
+            "net_profit_factor": 1.084722238967332,
+            "max_drawdown_net_R": 72.95914079430185
+          },
+          "cost_0.02R": {
+            "trades": 4724,
+            "average_net_R": 0.034919975024918275,
+            "total_net_R": 164.96196201771392,
+            "net_profit_factor": 1.0650543776238697,
+            "max_drawdown_net_R": 82.50101309644401
+          },
+          "cost_0.05R": {
+            "trades": 4724,
+            "average_net_R": 0.004919975024918255,
+            "total_net_R": 23.24196201771384,
+            "net_profit_factor": 1.0088387337973719,
+            "max_drawdown_net_R": 119.31101309644386
+          },
+          "cost_0.1R": {
+            "trades": 4724,
+            "average_net_R": -0.04508002497508176,
+            "total_net_R": -212.95803798228624,
+            "net_profit_factor": 0.9235999941129998,
+            "max_drawdown_net_R": 277.97806802243866
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 958,
+            "average_net_R": 0.03178902132049744,
+            "total_net_R": 30.45388242503655,
+            "net_profit_factor": 1.0619733507696119,
+            "max_drawdown_net_R": 38.22786201679112
+          },
+          "cost_0.01R": {
+            "trades": 958,
+            "average_net_R": 0.021789021320497464,
+            "total_net_R": 20.87388242503657,
+            "net_profit_factor": 1.0419480541049957,
+            "max_drawdown_net_R": 39.997862016791125
+          },
+          "cost_0.02R": {
+            "trades": 958,
+            "average_net_R": 0.011789021320497447,
+            "total_net_R": 11.293882425036553,
+            "net_profit_factor": 1.022415659503613,
+            "max_drawdown_net_R": 41.767862016791135
+          },
+          "cost_0.05R": {
+            "trades": 958,
+            "average_net_R": -0.018210978679502565,
+            "total_net_R": -17.446117574963456,
+            "net_profit_factor": 0.9666194125507985,
+            "max_drawdown_net_R": 47.07786201679112
+          },
+          "cost_0.1R": {
+            "trades": 958,
+            "average_net_R": -0.06821097867950258,
+            "total_net_R": -65.34611757496347,
+            "net_profit_factor": 0.8821445798501734,
+            "max_drawdown_net_R": 74.31247521212859
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 845,
+            "average_net_R": -0.006623300407180477,
+            "total_net_R": -5.596688844067503,
+            "net_profit_factor": 0.9873147482467131,
+            "max_drawdown_net_R": 57.56179363956404
+          },
+          "cost_0.01R": {
+            "trades": 845,
+            "average_net_R": -0.01662330040718046,
+            "total_net_R": -14.046688844067488,
+            "net_profit_factor": 0.9685612668758403,
+            "max_drawdown_net_R": 62.281793639564
+          },
+          "cost_0.02R": {
+            "trades": 845,
+            "average_net_R": -0.026623300407180472,
+            "total_net_R": -22.4966888440675,
+            "net_profit_factor": 0.950276140731209,
+            "max_drawdown_net_R": 67.00179363956406
+          },
+          "cost_0.05R": {
+            "trades": 845,
+            "average_net_R": -0.056623300407180485,
+            "total_net_R": -47.84668884406751,
+            "net_profit_factor": 0.8980820064935223,
+            "max_drawdown_net_R": 81.161793639564
+          },
+          "cost_0.1R": {
+            "trades": 845,
+            "average_net_R": -0.1066233004071805,
+            "total_net_R": -90.09668884406753,
+            "net_profit_factor": 0.8191429137425957,
+            "max_drawdown_net_R": 104.76179363956408
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.75,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 90,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4665,
+            "average_net_R": 0.0540381527762055,
+            "total_net_R": 252.08798270099865,
+            "net_profit_factor": 1.0891022247686102,
+            "max_drawdown_net_R": 58.506968669480585
+          },
+          "cost_0.01R": {
+            "trades": 4665,
+            "average_net_R": 0.044038152776205534,
+            "total_net_R": 205.43798270099882,
+            "net_profit_factor": 1.0718889652113937,
+            "max_drawdown_net_R": 62.952732139425564
+          },
+          "cost_0.02R": {
+            "trades": 4665,
+            "average_net_R": 0.03403815277620551,
+            "total_net_R": 158.78798270099873,
+            "net_profit_factor": 1.0550140117524252,
+            "max_drawdown_net_R": 74.71273213942546
+          },
+          "cost_0.05R": {
+            "trades": 4665,
+            "average_net_R": 0.004038152776205497,
+            "total_net_R": 18.837982700998644,
+            "net_profit_factor": 1.0063369086649703,
+            "max_drawdown_net_R": 110.35843102093474
+          },
+          "cost_0.1R": {
+            "trades": 4665,
+            "average_net_R": -0.04596184722379454,
+            "total_net_R": -214.41201729900152,
+            "net_profit_factor": 0.931247761322439,
+            "max_drawdown_net_R": 267.7631517716753
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 945,
+            "average_net_R": 0.04308466548426001,
+            "total_net_R": 40.71500888262571,
+            "net_profit_factor": 1.0719168697569066,
+            "max_drawdown_net_R": 42.825743674160975
+          },
+          "cost_0.01R": {
+            "trades": 945,
+            "average_net_R": 0.03308466548426004,
+            "total_net_R": 31.265008882625736,
+            "net_profit_factor": 1.0546772996785179,
+            "max_drawdown_net_R": 46.37956586479459
+          },
+          "cost_0.02R": {
+            "trades": 945,
+            "average_net_R": 0.023084665484260025,
+            "total_net_R": 21.815008882625722,
+            "net_profit_factor": 1.0377751703965552,
+            "max_drawdown_net_R": 50.02956586479461
+          },
+          "cost_0.05R": {
+            "trades": 945,
+            "average_net_R": -0.006915334515739994,
+            "total_net_R": -6.534991117374294,
+            "net_profit_factor": 0.9890109633311254,
+            "max_drawdown_net_R": 60.98806215269128
+          },
+          "cost_0.1R": {
+            "trades": 945,
+            "average_net_R": -0.05691533451574003,
+            "total_net_R": -53.78499111737433,
+            "net_profit_factor": 0.913788434426227,
+            "max_drawdown_net_R": 79.43806215269134
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 831,
+            "average_net_R": 0.021304202869570767,
+            "total_net_R": 17.703792584613307,
+            "net_profit_factor": 1.0355404600936937,
+            "max_drawdown_net_R": 36.104151103102325
+          },
+          "cost_0.01R": {
+            "trades": 831,
+            "average_net_R": 0.011304202869570798,
+            "total_net_R": 9.393792584613333,
+            "net_profit_factor": 1.0186701938915956,
+            "max_drawdown_net_R": 40.38924179115494
+          },
+          "cost_0.02R": {
+            "trades": 831,
+            "average_net_R": 0.0013042028695707804,
+            "total_net_R": 1.0837925846133185,
+            "net_profit_factor": 1.0021326495790939,
+            "max_drawdown_net_R": 45.009241791154935
+          },
+          "cost_0.05R": {
+            "trades": 831,
+            "average_net_R": -0.02869579713042924,
+            "total_net_R": -23.846207415386697,
+            "net_profit_factor": 0.9544453681636427,
+            "max_drawdown_net_R": 58.869241791154934
+          },
+          "cost_0.1R": {
+            "trades": 831,
+            "average_net_R": -0.07869579713042928,
+            "total_net_R": -65.39620741538673,
+            "net_profit_factor": 0.8809509450441934,
+            "max_drawdown_net_R": 81.96924179115496
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.75,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 60,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4666,
+            "average_net_R": 0.053807895745772875,
+            "total_net_R": 251.06764154977623,
+            "net_profit_factor": 1.08870783596699,
+            "max_drawdown_net_R": 59.15018448844063
+          },
+          "cost_0.01R": {
+            "trades": 4666,
+            "average_net_R": 0.0438078957457729,
+            "total_net_R": 204.40764154977637,
+            "net_profit_factor": 1.0715007413371065,
+            "max_drawdown_net_R": 64.7983297708007
+          },
+          "cost_0.02R": {
+            "trades": 4666,
+            "average_net_R": 0.033807895745772885,
+            "total_net_R": 157.7476415497763,
+            "net_profit_factor": 1.0546320679139347,
+            "max_drawdown_net_R": 76.56832977080053
+          },
+          "cost_0.05R": {
+            "trades": 4666,
+            "average_net_R": 0.00380789574577287,
+            "total_net_R": 17.76764154977621,
+            "net_profit_factor": 1.0059743923860804,
+            "max_drawdown_net_R": 112.24402865230992
+          },
+          "cost_0.1R": {
+            "trades": 4666,
+            "average_net_R": -0.046192104254227165,
+            "total_net_R": -215.53235845022397,
+            "net_profit_factor": 0.9309190020250825,
+            "max_drawdown_net_R": 269.3683803262699
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 945,
+            "average_net_R": 0.042153495250542294,
+            "total_net_R": 39.83505301176247,
+            "net_profit_factor": 1.0703625615670413,
+            "max_drawdown_net_R": 46.46920793723258
+          },
+          "cost_0.01R": {
+            "trades": 945,
+            "average_net_R": 0.03215349525054233,
+            "total_net_R": 30.385053011762498,
+            "net_profit_factor": 1.053138403238869,
+            "max_drawdown_net_R": 49.491512475457476
+          },
+          "cost_0.02R": {
+            "trades": 945,
+            "average_net_R": 0.022153495250542308,
+            "total_net_R": 20.93505301176248,
+            "net_profit_factor": 1.036251426668457,
+            "max_drawdown_net_R": 53.14151247545754
+          },
+          "cost_0.05R": {
+            "trades": 945,
+            "average_net_R": -0.007846504749457707,
+            "total_net_R": -7.414946988237533,
+            "net_profit_factor": 0.9875312570609518,
+            "max_drawdown_net_R": 64.10000876335415
+          },
+          "cost_0.1R": {
+            "trades": 945,
+            "average_net_R": -0.057846504749457746,
+            "total_net_R": -54.66494698823757,
+            "net_profit_factor": 0.9123779596508869,
+            "max_drawdown_net_R": 82.55000876335421
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 832,
+            "average_net_R": 0.021070213018816952,
+            "total_net_R": 17.530417231655704,
+            "net_profit_factor": 1.0351924081277903,
+            "max_drawdown_net_R": 36.10415110310233
+          },
+          "cost_0.01R": {
+            "trades": 832,
+            "average_net_R": 0.011070213018816983,
+            "total_net_R": 9.21041723165573,
+            "net_profit_factor": 1.0183057347699127,
+            "max_drawdown_net_R": 40.38924179115493
+          },
+          "cost_0.02R": {
+            "trades": 832,
+            "average_net_R": 0.0010702130188169666,
+            "total_net_R": 0.8904172316557163,
+            "net_profit_factor": 1.0017521322449223,
+            "max_drawdown_net_R": 45.00924179115494
+          },
+          "cost_0.05R": {
+            "trades": 832,
+            "average_net_R": -0.02892978698118305,
+            "total_net_R": -24.069582768344297,
+            "net_profit_factor": 0.9540186427817804,
+            "max_drawdown_net_R": 58.869241791154934
+          },
+          "cost_0.1R": {
+            "trades": 832,
+            "average_net_R": -0.07892978698118308,
+            "total_net_R": -65.66958276834433,
+            "net_profit_factor": 0.8804532850314178,
+            "max_drawdown_net_R": 81.96924179115496
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.5,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 90,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4813,
+            "average_net_R": 0.05279080613696402,
+            "total_net_R": 254.08214993720782,
+            "net_profit_factor": 1.1021908246906176,
+            "max_drawdown_net_R": 52.574513622325355
+          },
+          "cost_0.01R": {
+            "trades": 4813,
+            "average_net_R": 0.042790806136964045,
+            "total_net_R": 205.95214993720793,
+            "net_profit_factor": 1.0819959423226309,
+            "max_drawdown_net_R": 56.824513622325384
+          },
+          "cost_0.02R": {
+            "trades": 4813,
+            "average_net_R": 0.03279080613696402,
+            "total_net_R": 157.82214993720785,
+            "net_profit_factor": 1.0622008926938633,
+            "max_drawdown_net_R": 62.512714931359
+          },
+          "cost_0.05R": {
+            "trades": 4813,
+            "average_net_R": 0.0027908061369640155,
+            "total_net_R": 13.432149937207807,
+            "net_profit_factor": 1.0051362549081573,
+            "max_drawdown_net_R": 107.61316759021693
+          },
+          "cost_0.1R": {
+            "trades": 4813,
+            "average_net_R": -0.04720919386303602,
+            "total_net_R": -227.21785006279237,
+            "net_profit_factor": 0.9173285214739192,
+            "max_drawdown_net_R": 302.6536822318378
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 978,
+            "average_net_R": 0.029681109338106203,
+            "total_net_R": 29.02812493266787,
+            "net_profit_factor": 1.0591984662857856,
+            "max_drawdown_net_R": 38.3784572806962
+          },
+          "cost_0.01R": {
+            "trades": 978,
+            "average_net_R": 0.019681109338106222,
+            "total_net_R": 19.248124932667885,
+            "net_profit_factor": 1.0388580256651452,
+            "max_drawdown_net_R": 40.07845728069622
+          },
+          "cost_0.02R": {
+            "trades": 978,
+            "average_net_R": 0.009681109338106205,
+            "total_net_R": 9.468124932667868,
+            "net_profit_factor": 1.0189220985248293,
+            "max_drawdown_net_R": 41.778457280696216
+          },
+          "cost_0.05R": {
+            "trades": 978,
+            "average_net_R": -0.02031889066189381,
+            "total_net_R": -19.871875067332144,
+            "net_profit_factor": 0.9614674055642657,
+            "max_drawdown_net_R": 48.206630076765364
+          },
+          "cost_0.1R": {
+            "trades": 978,
+            "average_net_R": -0.07031889066189384,
+            "total_net_R": -68.77187506733218,
+            "net_profit_factor": 0.8731242109375256,
+            "max_drawdown_net_R": 77.8996323620283
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 860,
+            "average_net_R": 0.027466707317668034,
+            "total_net_R": 23.62136829319451,
+            "net_profit_factor": 1.0547746841180792,
+            "max_drawdown_net_R": 35.22662021977304
+          },
+          "cost_0.01R": {
+            "trades": 860,
+            "average_net_R": 0.01746670731766806,
+            "total_net_R": 15.02136829319453,
+            "net_profit_factor": 1.0344817741484407,
+            "max_drawdown_net_R": 39.21662021977303
+          },
+          "cost_0.02R": {
+            "trades": 860,
+            "average_net_R": 0.007466707317668041,
+            "total_net_R": 6.421368293194515,
+            "net_profit_factor": 1.0145921823282207,
+            "max_drawdown_net_R": 43.468533400375925
+          },
+          "cost_0.05R": {
+            "trades": 860,
+            "average_net_R": -0.02253329268233197,
+            "total_net_R": -19.378631706805493,
+            "net_profit_factor": 0.9572771706822332,
+            "max_drawdown_net_R": 57.55159287041263
+          },
+          "cost_0.1R": {
+            "trades": 860,
+            "average_net_R": -0.072533292682332,
+            "total_net_R": -62.37863170680552,
+            "net_profit_factor": 0.8691973710834741,
+            "max_drawdown_net_R": 81.55159287041268
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.5,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 60,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4814,
+            "average_net_R": 0.05233711226823288,
+            "total_net_R": 251.9508584592731,
+            "net_profit_factor": 1.1012901200524017,
+            "max_drawdown_net_R": 52.574513622325355
+          },
+          "cost_0.01R": {
+            "trades": 4814,
+            "average_net_R": 0.04233711226823291,
+            "total_net_R": 203.81085845927322,
+            "net_profit_factor": 1.0811082951003868,
+            "max_drawdown_net_R": 56.824513622325355
+          },
+          "cost_0.02R": {
+            "trades": 4814,
+            "average_net_R": 0.03233711226823289,
+            "total_net_R": 155.67085845927312,
+            "net_profit_factor": 1.061326245643635,
+            "max_drawdown_net_R": 64.83772782338721
+          },
+          "cost_0.05R": {
+            "trades": 4814,
+            "average_net_R": 0.0023371122682328805,
+            "total_net_R": 11.250858459273086,
+            "net_profit_factor": 1.0043002408405708,
+            "max_drawdown_net_R": 109.7944590681517
+          },
+          "cost_0.1R": {
+            "trades": 4814,
+            "average_net_R": -0.047662887731767155,
+            "total_net_R": -229.44914154072708,
+            "net_profit_factor": 0.9165551798407209,
+            "max_drawdown_net_R": 304.88497370977257
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 978,
+            "average_net_R": 0.029713335976561134,
+            "total_net_R": 29.05964258507679,
+            "net_profit_factor": 1.0592627417664744,
+            "max_drawdown_net_R": 38.3784572806962
+          },
+          "cost_0.01R": {
+            "trades": 978,
+            "average_net_R": 0.019713335976561153,
+            "total_net_R": 19.279642585076807,
+            "net_profit_factor": 1.0389216533561798,
+            "max_drawdown_net_R": 40.07845728069622
+          },
+          "cost_0.02R": {
+            "trades": 978,
+            "average_net_R": 0.009713335976561138,
+            "total_net_R": 9.499642585076792,
+            "net_profit_factor": 1.0189850867224286,
+            "max_drawdown_net_R": 41.778457280696216
+          },
+          "cost_0.05R": {
+            "trades": 978,
+            "average_net_R": -0.020286664023438875,
+            "total_net_R": -19.84035741492322,
+            "net_profit_factor": 0.9615285199238178,
+            "max_drawdown_net_R": 48.206630076765364
+          },
+          "cost_0.1R": {
+            "trades": 978,
+            "average_net_R": -0.0702866640234389,
+            "total_net_R": -68.74035741492325,
+            "net_profit_factor": 0.8731823571930241,
+            "max_drawdown_net_R": 77.86811470961938
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 861,
+            "average_net_R": 0.027672037660107656,
+            "total_net_R": 23.825624425352693,
+            "net_profit_factor": 1.0552483258216112,
+            "max_drawdown_net_R": 35.22662021977304
+          },
+          "cost_0.01R": {
+            "trades": 861,
+            "average_net_R": 0.01767203766010768,
+            "total_net_R": 15.215624425352711,
+            "net_profit_factor": 1.0349276919866353,
+            "max_drawdown_net_R": 39.21662021977303
+          },
+          "cost_0.02R": {
+            "trades": 861,
+            "average_net_R": 0.00767203766010766,
+            "total_net_R": 6.605624425352695,
+            "net_profit_factor": 1.015010893567443,
+            "max_drawdown_net_R": 43.468533400375925
+          },
+          "cost_0.05R": {
+            "trades": 861,
+            "average_net_R": -0.022327962339892347,
+            "total_net_R": -19.22437557464731,
+            "net_profit_factor": 0.9576172493062105,
+            "max_drawdown_net_R": 57.55159287041263
+          },
+          "cost_0.1R": {
+            "trades": 861,
+            "average_net_R": -0.07232796233989239,
+            "total_net_R": -62.274375574647344,
+            "net_profit_factor": 0.8694159872312449,
+            "max_drawdown_net_R": 81.55159287041268
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.75,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 30,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4678,
+            "average_net_R": 0.05186724144731976,
+            "total_net_R": 242.63495549056182,
+            "net_profit_factor": 1.0860310672790152,
+            "max_drawdown_net_R": 59.35687600316956
+          },
+          "cost_0.01R": {
+            "trades": 4678,
+            "average_net_R": 0.041867241447319785,
+            "total_net_R": 195.85495549056196,
+            "net_profit_factor": 1.0687483158974482,
+            "max_drawdown_net_R": 65.3268760031695
+          },
+          "cost_0.02R": {
+            "trades": 4678,
+            "average_net_R": 0.031867241447319776,
+            "total_net_R": 149.0749554905619,
+            "net_profit_factor": 1.0518070058329683,
+            "max_drawdown_net_R": 71.29687600316915
+          },
+          "cost_0.05R": {
+            "trades": 4678,
+            "average_net_R": 0.0018672414473197554,
+            "total_net_R": 8.734955490561816,
+            "net_profit_factor": 1.0029470036415034,
+            "max_drawdown_net_R": 105.20192550201588
+          },
+          "cost_0.1R": {
+            "trades": 4678,
+            "average_net_R": -0.04813275855268028,
+            "total_net_R": -225.16504450943836,
+            "net_profit_factor": 0.9275989156800677,
+            "max_drawdown_net_R": 282.2429907373984
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 949,
+            "average_net_R": 0.026123610794183145,
+            "total_net_R": 24.791306643679803,
+            "net_profit_factor": 1.0437204853067956,
+            "max_drawdown_net_R": 48.44239298467104
+          },
+          "cost_0.01R": {
+            "trades": 949,
+            "average_net_R": 0.01612361079418317,
+            "total_net_R": 15.301306643679828,
+            "net_profit_factor": 1.0267164046147539,
+            "max_drawdown_net_R": 51.926280183355644
+          },
+          "cost_0.02R": {
+            "trades": 949,
+            "average_net_R": 0.006123610794183151,
+            "total_net_R": 5.811306643679811,
+            "net_profit_factor": 1.0100465669537892,
+            "max_drawdown_net_R": 55.586280183355676
+          },
+          "cost_0.05R": {
+            "trades": 949,
+            "average_net_R": -0.023876389205816858,
+            "total_net_R": -22.6586933563202,
+            "net_profit_factor": 0.961961882961596,
+            "max_drawdown_net_R": 66.5747764712523
+          },
+          "cost_0.1R": {
+            "trades": 949,
+            "average_net_R": -0.0738763892058169,
+            "total_net_R": -70.10869335632025,
+            "net_profit_factor": 0.8878146970370343,
+            "max_drawdown_net_R": 85.07477647125232
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 833,
+            "average_net_R": 0.03206799208997309,
+            "total_net_R": 26.712637410947583,
+            "net_profit_factor": 1.0538717335847583,
+            "max_drawdown_net_R": 32.78752666055275
+          },
+          "cost_0.01R": {
+            "trades": 833,
+            "average_net_R": 0.02206799208997312,
+            "total_net_R": 18.38263741094761,
+            "net_profit_factor": 1.0367029207863152,
+            "max_drawdown_net_R": 35.76962172171148
+          },
+          "cost_0.02R": {
+            "trades": 833,
+            "average_net_R": 0.012067992089973103,
+            "total_net_R": 10.052637410947595,
+            "net_profit_factor": 1.019871731055955,
+            "max_drawdown_net_R": 40.19962172171148
+          },
+          "cost_0.05R": {
+            "trades": 833,
+            "average_net_R": -0.017932007910026915,
+            "total_net_R": -14.93736258905242,
+            "net_profit_factor": 0.9713343668568871,
+            "max_drawdown_net_R": 53.96165558068945
+          },
+          "cost_0.1R": {
+            "trades": 833,
+            "average_net_R": -0.06793200791002696,
+            "total_net_R": -56.587362589052454,
+            "net_profit_factor": 0.896520694625206,
+            "max_drawdown_net_R": 77.11165558068949
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.5,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 30,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4818,
+            "average_net_R": 0.051777161762200645,
+            "total_net_R": 249.4623653702827,
+            "net_profit_factor": 1.1002650093695483,
+            "max_drawdown_net_R": 52.45657057754343
+          },
+          "cost_0.01R": {
+            "trades": 4818,
+            "average_net_R": 0.041777161762200664,
+            "total_net_R": 201.2823653702828,
+            "net_profit_factor": 1.0800809547378347,
+            "max_drawdown_net_R": 56.70657057754349
+          },
+          "cost_0.02R": {
+            "trades": 4818,
+            "average_net_R": 0.03177716176220065,
+            "total_net_R": 153.1023653702827,
+            "net_profit_factor": 1.0602974741142943,
+            "max_drawdown_net_R": 66.6800113782106
+          },
+          "cost_0.05R": {
+            "trades": 4818,
+            "average_net_R": 0.0017771617622006379,
+            "total_net_R": 8.562365370282674,
+            "net_profit_factor": 1.003271581718302,
+            "max_drawdown_net_R": 114.55775567268063
+          },
+          "cost_0.1R": {
+            "trades": 4818,
+            "average_net_R": -0.0482228382377994,
+            "total_net_R": -232.3376346297175,
+            "net_profit_factor": 0.915535801904224,
+            "max_drawdown_net_R": 306.58396129156296
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 978,
+            "average_net_R": 0.028340987967764495,
+            "total_net_R": 27.717486232473675,
+            "net_profit_factor": 1.0564704913930585,
+            "max_drawdown_net_R": 37.728625458632585
+          },
+          "cost_0.01R": {
+            "trades": 978,
+            "average_net_R": 0.018340987967764514,
+            "total_net_R": 17.937486232473695,
+            "net_profit_factor": 1.036176424997148,
+            "max_drawdown_net_R": 39.4286254586326
+          },
+          "cost_0.02R": {
+            "trades": 978,
+            "average_net_R": 0.008340987967764495,
+            "total_net_R": 8.157486232473676,
+            "net_profit_factor": 1.0162865487874644,
+            "max_drawdown_net_R": 41.1286254586326
+          },
+          "cost_0.05R": {
+            "trades": 978,
+            "average_net_R": -0.021659012032235515,
+            "total_net_R": -21.182513767526334,
+            "net_profit_factor": 0.9589680722790183,
+            "max_drawdown_net_R": 48.50519066257681
+          },
+          "cost_0.1R": {
+            "trades": 978,
+            "average_net_R": -0.07165901203223554,
+            "total_net_R": -70.08251376752636,
+            "net_profit_factor": 0.8708441260689327,
+            "max_drawdown_net_R": 79.21027106222247
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 862,
+            "average_net_R": 0.028513557793215117,
+            "total_net_R": 24.578686817751432,
+            "net_profit_factor": 1.0569945732935127,
+            "max_drawdown_net_R": 35.924517638369565
+          },
+          "cost_0.01R": {
+            "trades": 862,
+            "average_net_R": 0.01851355779321514,
+            "total_net_R": 15.95868681775145,
+            "net_profit_factor": 1.0366334027509805,
+            "max_drawdown_net_R": 39.924517638369544
+          },
+          "cost_0.02R": {
+            "trades": 862,
+            "average_net_R": 0.008513557793215122,
+            "total_net_R": 7.3386868177514355,
+            "net_profit_factor": 1.0166767348024304,
+            "max_drawdown_net_R": 43.924517638369544
+          },
+          "cost_0.05R": {
+            "trades": 862,
+            "average_net_R": -0.021486442206784886,
+            "total_net_R": -18.521313182248573,
+            "net_profit_factor": 0.9591672459749454,
+            "max_drawdown_net_R": 57.429901412754475
+          },
+          "cost_0.1R": {
+            "trades": 862,
+            "average_net_R": -0.07148644220678492,
+            "total_net_R": -61.6213131822486,
+            "net_profit_factor": 0.8707854029339454,
+            "max_drawdown_net_R": 81.47990141275451
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.5,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 15,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4851,
+            "average_net_R": 0.04894027400377719,
+            "total_net_R": 237.40926919232317,
+            "net_profit_factor": 1.096511356761156,
+            "max_drawdown_net_R": 54.34590256962616
+          },
+          "cost_0.01R": {
+            "trades": 4851,
+            "average_net_R": 0.03894027400377722,
+            "total_net_R": 188.8992691923233,
+            "net_profit_factor": 1.0760025495614174,
+            "max_drawdown_net_R": 57.83555186505268
+          },
+          "cost_0.02R": {
+            "trades": 4851,
+            "average_net_R": 0.028940274003777203,
+            "total_net_R": 140.3892691923232,
+            "net_profit_factor": 1.0559069768738052,
+            "max_drawdown_net_R": 61.36555186505276
+          },
+          "cost_0.05R": {
+            "trades": 4851,
+            "average_net_R": -0.0010597259962228083,
+            "total_net_R": -5.140730807676843,
+            "net_profit_factor": 0.9980147341494326,
+            "max_drawdown_net_R": 117.27656653816794
+          },
+          "cost_0.1R": {
+            "trades": 4851,
+            "average_net_R": -0.05105972599622285,
+            "total_net_R": -247.69073080767703,
+            "net_profit_factor": 0.9090571514793189,
+            "max_drawdown_net_R": 309.6118519638451
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 984,
+            "average_net_R": 0.041226739908687575,
+            "total_net_R": 40.567112070148575,
+            "net_profit_factor": 1.0833724323333322,
+            "max_drawdown_net_R": 33.64981781326014
+          },
+          "cost_0.01R": {
+            "trades": 984,
+            "average_net_R": 0.031226739908687594,
+            "total_net_R": 30.727112070148593,
+            "net_profit_factor": 1.0625069370517701,
+            "max_drawdown_net_R": 35.35981781326016
+          },
+          "cost_0.02R": {
+            "trades": 984,
+            "average_net_R": 0.02122673990868758,
+            "total_net_R": 20.88711207014858,
+            "net_profit_factor": 1.0420604171847003,
+            "max_drawdown_net_R": 37.8385180541339
+          },
+          "cost_0.05R": {
+            "trades": 984,
+            "average_net_R": -0.008773260091312433,
+            "total_net_R": -8.632887929851433,
+            "net_profit_factor": 0.9831364872107938,
+            "max_drawdown_net_R": 45.841398701799136
+          },
+          "cost_0.1R": {
+            "trades": 984,
+            "average_net_R": -0.05877326009131246,
+            "total_net_R": -57.83288792985146,
+            "net_profit_factor": 0.892554253476631,
+            "max_drawdown_net_R": 68.76332686479239
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 871,
+            "average_net_R": 0.025396041315831785,
+            "total_net_R": 22.119951986089486,
+            "net_profit_factor": 1.0516513625877946,
+            "max_drawdown_net_R": 33.812053531616655
+          },
+          "cost_0.01R": {
+            "trades": 871,
+            "average_net_R": 0.015396041315831806,
+            "total_net_R": 13.409951986089503,
+            "net_profit_factor": 1.0309912675773785,
+            "max_drawdown_net_R": 37.84205353161664
+          },
+          "cost_0.02R": {
+            "trades": 871,
+            "average_net_R": 0.005396041315831788,
+            "total_net_R": 4.699951986089487,
+            "net_profit_factor": 1.0107505063509352,
+            "max_drawdown_net_R": 42.24129943033401
+          },
+          "cost_0.05R": {
+            "trades": 871,
+            "average_net_R": -0.024603958684168224,
+            "total_net_R": -21.430048013910522,
+            "net_profit_factor": 0.9524708937380628,
+            "max_drawdown_net_R": 56.79129943033399
+          },
+          "cost_0.1R": {
+            "trades": 871,
+            "average_net_R": -0.07460395868416825,
+            "total_net_R": -64.98004801391055,
+            "net_profit_factor": 0.8630437893786591,
+            "max_drawdown_net_R": 81.04129943033405
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.25,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 60,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4859,
+            "average_net_R": 0.04887773410787383,
+            "total_net_R": 237.49691003015892,
+            "net_profit_factor": 1.1122929595692364,
+            "max_drawdown_net_R": 45.77006337861206
+          },
+          "cost_0.01R": {
+            "trades": 4859,
+            "average_net_R": 0.03887773410787384,
+            "total_net_R": 188.906910030159,
+            "net_profit_factor": 1.0881083179006223,
+            "max_drawdown_net_R": 52.99006337861199
+          },
+          "cost_0.02R": {
+            "trades": 4859,
+            "average_net_R": 0.02887773410787383,
+            "total_net_R": 140.31691003015894,
+            "net_profit_factor": 1.0645662042088933,
+            "max_drawdown_net_R": 60.210063378612034
+          },
+          "cost_0.05R": {
+            "trades": 4859,
+            "average_net_R": -0.0011222658921261782,
+            "total_net_R": -5.453089969841099,
+            "net_profit_factor": 0.997589137239798,
+            "max_drawdown_net_R": 117.22788066226454
+          },
+          "cost_0.1R": {
+            "trades": 4859,
+            "average_net_R": -0.051122265892126206,
+            "total_net_R": -248.40308996984123,
+            "net_profit_factor": 0.8970461477777453,
+            "max_drawdown_net_R": 332.0409547343336
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 983,
+            "average_net_R": 0.027792581510853127,
+            "total_net_R": 27.320107625168625,
+            "net_profit_factor": 1.0647748759206626,
+            "max_drawdown_net_R": 34.081761971937574
+          },
+          "cost_0.01R": {
+            "trades": 983,
+            "average_net_R": 0.017792581510853143,
+            "total_net_R": 17.49010762516864,
+            "net_profit_factor": 1.0409180478021536,
+            "max_drawdown_net_R": 35.871761971937595
+          },
+          "cost_0.02R": {
+            "trades": 983,
+            "average_net_R": 0.007792581510853128,
+            "total_net_R": 7.660107625168624,
+            "net_profit_factor": 1.0176853729423845,
+            "max_drawdown_net_R": 37.66176197193759
+          },
+          "cost_0.05R": {
+            "trades": 983,
+            "average_net_R": -0.02220741848914688,
+            "total_net_R": -21.82989237483138,
+            "net_profit_factor": 0.951533010661012,
+            "max_drawdown_net_R": 44.800713984397575
+          },
+          "cost_0.1R": {
+            "trades": 983,
+            "average_net_R": -0.0722074184891469,
+            "total_net_R": -70.97989237483141,
+            "net_profit_factor": 0.8520789012373257,
+            "max_drawdown_net_R": 78.2922213953699
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 868,
+            "average_net_R": 0.03640005466950673,
+            "total_net_R": 31.59524745313184,
+            "net_profit_factor": 1.0864965138694112,
+            "max_drawdown_net_R": 32.645847675734046
+          },
+          "cost_0.01R": {
+            "trades": 868,
+            "average_net_R": 0.02640005466950674,
+            "total_net_R": 22.91524745313185,
+            "net_profit_factor": 1.061873948622654,
+            "max_drawdown_net_R": 36.14130376385285
+          },
+          "cost_0.02R": {
+            "trades": 868,
+            "average_net_R": 0.01640005466950673,
+            "total_net_R": 14.235247453131839,
+            "net_profit_factor": 1.0379134464338466,
+            "max_drawdown_net_R": 40.87915233797882
+          },
+          "cost_0.05R": {
+            "trades": 868,
+            "average_net_R": -0.013599945330493276,
+            "total_net_R": -11.804752546868164,
+            "net_profit_factor": 0.9698112225747316,
+            "max_drawdown_net_R": 55.42915233797879
+          },
+          "cost_0.1R": {
+            "trades": 868,
+            "average_net_R": -0.0635999453304933,
+            "total_net_R": -55.204752546868185,
+            "net_profit_factor": 0.8677814888514225,
+            "max_drawdown_net_R": 79.83817630869211
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.25,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 90,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4859,
+            "average_net_R": 0.04873033658857538,
+            "total_net_R": 236.78070548388777,
+            "net_profit_factor": 1.1119511189215767,
+            "max_drawdown_net_R": 45.77006337861206
+          },
+          "cost_0.01R": {
+            "trades": 4859,
+            "average_net_R": 0.038730336588575394,
+            "total_net_R": 188.19070548388785,
+            "net_profit_factor": 1.0877713832878284,
+            "max_drawdown_net_R": 52.99006337861199
+          },
+          "cost_0.02R": {
+            "trades": 4859,
+            "average_net_R": 0.028730336588575385,
+            "total_net_R": 139.6007054838878,
+            "net_profit_factor": 1.0642342646226988,
+            "max_drawdown_net_R": 60.210063378612034
+          },
+          "cost_0.05R": {
+            "trades": 4859,
+            "average_net_R": -0.0012696634114246212,
+            "total_net_R": -6.169294516112235,
+            "net_profit_factor": 0.9972726297393228,
+            "max_drawdown_net_R": 117.94408520853571
+          },
+          "cost_0.1R": {
+            "trades": 4859,
+            "average_net_R": -0.05126966341142465,
+            "total_net_R": -249.11929451611238,
+            "net_profit_factor": 0.8967561782513299,
+            "max_drawdown_net_R": 332.7571592806048
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 983,
+            "average_net_R": 0.02776051879222757,
+            "total_net_R": 27.288589972759702,
+            "net_profit_factor": 1.0647001488349532,
+            "max_drawdown_net_R": 34.081761971937574
+          },
+          "cost_0.01R": {
+            "trades": 983,
+            "average_net_R": 0.017760518792227585,
+            "total_net_R": 17.458589972759714,
+            "net_profit_factor": 1.040844312360639,
+            "max_drawdown_net_R": 35.871761971937595
+          },
+          "cost_0.02R": {
+            "trades": 983,
+            "average_net_R": 0.007760518792227571,
+            "total_net_R": 7.628589972759702,
+            "net_profit_factor": 1.0176126061531439,
+            "max_drawdown_net_R": 37.66176197193759
+          },
+          "cost_0.05R": {
+            "trades": 983,
+            "average_net_R": -0.02223948120777244,
+            "total_net_R": -21.861410027240307,
+            "net_profit_factor": 0.9514630347904459,
+            "max_drawdown_net_R": 44.8322316368065
+          },
+          "cost_0.1R": {
+            "trades": 983,
+            "average_net_R": -0.07223948120777246,
+            "total_net_R": -71.01141002724033,
+            "net_profit_factor": 0.8520132188923859,
+            "max_drawdown_net_R": 78.32373904777883
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 867,
+            "average_net_R": 0.03687007332472864,
+            "total_net_R": 31.96635357253973,
+            "net_profit_factor": 1.0876014692585854,
+            "max_drawdown_net_R": 32.645847675734046
+          },
+          "cost_0.01R": {
+            "trades": 867,
+            "average_net_R": 0.026870073324728655,
+            "total_net_R": 23.296353572539743,
+            "net_profit_factor": 1.0629677772938453,
+            "max_drawdown_net_R": 36.14130376385285
+          },
+          "cost_0.02R": {
+            "trades": 867,
+            "average_net_R": 0.01687007332472864,
+            "total_net_R": 14.62635357253973,
+            "net_profit_factor": 1.0389957189081016,
+            "max_drawdown_net_R": 40.87915233797882
+          },
+          "cost_0.05R": {
+            "trades": 867,
+            "average_net_R": -0.013129926675271365,
+            "total_net_R": -11.383646427460274,
+            "net_profit_factor": 0.9708567497960731,
+            "max_drawdown_net_R": 55.42915233797879
+          },
+          "cost_0.1R": {
+            "trades": 867,
+            "average_net_R": -0.06312992667527138,
+            "total_net_R": -54.73364642746029,
+            "net_profit_factor": 0.8687617351803766,
+            "max_drawdown_net_R": 79.83817630869211
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.25,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 30,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4860,
+            "average_net_R": 0.048072547660487894,
+            "total_net_R": 233.63258162997116,
+            "net_profit_factor": 1.1104037503948059,
+            "max_drawdown_net_R": 47.022101105541054
+          },
+          "cost_0.01R": {
+            "trades": 4860,
+            "average_net_R": 0.03807254766048791,
+            "total_net_R": 185.03258162997125,
+            "net_profit_factor": 1.086252638019872,
+            "max_drawdown_net_R": 54.242101105540996
+          },
+          "cost_0.02R": {
+            "trades": 4860,
+            "average_net_R": 0.028072547660487893,
+            "total_net_R": 136.43258162997117,
+            "net_profit_factor": 1.0627433563904323,
+            "max_drawdown_net_R": 61.46210110554103
+          },
+          "cost_0.05R": {
+            "trades": 4860,
+            "average_net_R": -0.0019274523395121077,
+            "total_net_R": -9.367418370028844,
+            "net_profit_factor": 0.9958609348764786,
+            "max_drawdown_net_R": 120.84087115616916
+          },
+          "cost_0.1R": {
+            "trades": 4860,
+            "average_net_R": -0.05192745233951214,
+            "total_net_R": -252.367418370029,
+            "net_profit_factor": 0.8954612778907046,
+            "max_drawdown_net_R": 335.703945228238
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 983,
+            "average_net_R": 0.024984106139860716,
+            "total_net_R": 24.559376335483083,
+            "net_profit_factor": 1.0581632824650453,
+            "max_drawdown_net_R": 34.081761971937574
+          },
+          "cost_0.01R": {
+            "trades": 983,
+            "average_net_R": 0.01498410613986073,
+            "total_net_R": 14.729376335483098,
+            "net_profit_factor": 1.0344199754880419,
+            "max_drawdown_net_R": 35.871761971937595
+          },
+          "cost_0.02R": {
+            "trades": 983,
+            "average_net_R": 0.004984106139860715,
+            "total_net_R": 4.899376335483083,
+            "net_profit_factor": 1.0112984905207756,
+            "max_drawdown_net_R": 38.62144527408307
+          },
+          "cost_0.05R": {
+            "trades": 983,
+            "average_net_R": -0.025015893860139294,
+            "total_net_R": -24.590623664516926,
+            "net_profit_factor": 0.94546761041831,
+            "max_drawdown_net_R": 47.56144527408311
+          },
+          "cost_0.1R": {
+            "trades": 983,
+            "average_net_R": -0.07501589386013931,
+            "total_net_R": -73.74062366451695,
+            "net_profit_factor": 0.8465106766014238,
+            "max_drawdown_net_R": 81.05295268505544
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 868,
+            "average_net_R": 0.03668675532060406,
+            "total_net_R": 31.844103618284326,
+            "net_profit_factor": 1.0871777932539937,
+            "max_drawdown_net_R": 32.97836244532215
+          },
+          "cost_0.01R": {
+            "trades": 868,
+            "average_net_R": 0.026686755320604074,
+            "total_net_R": 23.164103618284337,
+            "net_profit_factor": 1.062545890464372,
+            "max_drawdown_net_R": 36.473818533440955
+          },
+          "cost_0.02R": {
+            "trades": 868,
+            "average_net_R": 0.01668675532060406,
+            "total_net_R": 14.484103618284324,
+            "net_profit_factor": 1.03857623750357,
+            "max_drawdown_net_R": 41.21166710756694
+          },
+          "cost_0.05R": {
+            "trades": 868,
+            "average_net_R": -0.013313244679395944,
+            "total_net_R": -11.55589638171568,
+            "net_profit_factor": 0.9704476326435466,
+            "max_drawdown_net_R": 55.76166710756689
+          },
+          "cost_0.1R": {
+            "trades": 868,
+            "average_net_R": -0.06331324467939596,
+            "total_net_R": -54.9558963817157,
+            "net_profit_factor": 0.8683775134711992,
+            "max_drawdown_net_R": 80.17069107828021
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.75,
+        "trail_gap": 0.5
+      },
+      "max_hold_m1_bars": 90,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4745,
+            "average_net_R": 0.04737851651248757,
+            "total_net_R": 224.81106085175352,
+            "net_profit_factor": 1.0779746020874768,
+            "max_drawdown_net_R": 63.49664698539074
+          },
+          "cost_0.01R": {
+            "trades": 4745,
+            "average_net_R": 0.0373785165124876,
+            "total_net_R": 177.36106085175368,
+            "net_profit_factor": 1.0609045882871448,
+            "max_drawdown_net_R": 67.66664698539081
+          },
+          "cost_0.02R": {
+            "trades": 4745,
+            "average_net_R": 0.027378516512487575,
+            "total_net_R": 129.91106085175355,
+            "net_profit_factor": 1.0441708076239513,
+            "max_drawdown_net_R": 71.83664698539081
+          },
+          "cost_0.05R": {
+            "trades": 4745,
+            "average_net_R": -0.0026214834875124345,
+            "total_net_R": -12.4389391482465,
+            "net_profit_factor": 0.9958921728530808,
+            "max_drawdown_net_R": 108.63012116881376
+          },
+          "cost_0.1R": {
+            "trades": 4745,
+            "average_net_R": -0.05262148348751248,
+            "total_net_R": -249.6889391482467,
+            "net_profit_factor": 0.9213134547879647,
+            "max_drawdown_net_R": 313.97992224224083
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 958,
+            "average_net_R": 0.027598001498830353,
+            "total_net_R": 26.438885435879477,
+            "net_profit_factor": 1.0461298991771613,
+            "max_drawdown_net_R": 54.51675757547988
+          },
+          "cost_0.01R": {
+            "trades": 958,
+            "average_net_R": 0.017598001498830375,
+            "total_net_R": 16.8588854358795,
+            "net_profit_factor": 1.029123790452144,
+            "max_drawdown_net_R": 57.046757575479816
+          },
+          "cost_0.02R": {
+            "trades": 958,
+            "average_net_R": 0.007598001498830354,
+            "total_net_R": 7.278885435879479,
+            "net_profit_factor": 1.0124510550455796,
+            "max_drawdown_net_R": 59.826110097052485
+          },
+          "cost_0.05R": {
+            "trades": 958,
+            "average_net_R": -0.02240199850116966,
+            "total_net_R": -21.461114564120535,
+            "net_profit_factor": 0.9643378613587502,
+            "max_drawdown_net_R": 68.25611009705246
+          },
+          "cost_0.1R": {
+            "trades": 958,
+            "average_net_R": -0.0724019985011697,
+            "total_net_R": -69.36111456412057,
+            "net_profit_factor": 0.8899798134034507,
+            "max_drawdown_net_R": 82.61811110783852
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 846,
+            "average_net_R": 0.030319751423220468,
+            "total_net_R": 25.650509704044516,
+            "net_profit_factor": 1.050480146329479,
+            "max_drawdown_net_R": 34.36476853673054
+          },
+          "cost_0.01R": {
+            "trades": 846,
+            "average_net_R": 0.0203197514232205,
+            "total_net_R": 17.190509704044544,
+            "net_profit_factor": 1.0334943895715472,
+            "max_drawdown_net_R": 35.904768536730515
+          },
+          "cost_0.02R": {
+            "trades": 846,
+            "average_net_R": 0.010319751423220476,
+            "total_net_R": 8.730509704044524,
+            "net_profit_factor": 1.016842827848469,
+            "max_drawdown_net_R": 37.44476853673051
+          },
+          "cost_0.05R": {
+            "trades": 846,
+            "average_net_R": -0.019680248576779535,
+            "total_net_R": -16.649490295955488,
+            "net_profit_factor": 0.9688043414268978,
+            "max_drawdown_net_R": 48.22741326491486
+          },
+          "cost_0.1R": {
+            "trades": 846,
+            "average_net_R": -0.06968024857677957,
+            "total_net_R": -58.94949029595552,
+            "net_profit_factor": 0.8946080904775535,
+            "max_drawdown_net_R": 76.22227607850654
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.75,
+        "trail_activation": 0.5,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 30,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4611,
+            "average_net_R": 0.04730871667433926,
+            "total_net_R": 218.14049258537833,
+            "net_profit_factor": 1.1089021252579983,
+            "max_drawdown_net_R": 50.42933321911399
+          },
+          "cost_0.01R": {
+            "trades": 4611,
+            "average_net_R": 0.037308716674339285,
+            "total_net_R": 172.03049258537843,
+            "net_profit_factor": 1.0847681698795009,
+            "max_drawdown_net_R": 56.082286338383994
+          },
+          "cost_0.02R": {
+            "trades": 4611,
+            "average_net_R": 0.027308716674339262,
+            "total_net_R": 125.92049258537834,
+            "net_profit_factor": 1.0612478740198492,
+            "max_drawdown_net_R": 62.962286338383976
+          },
+          "cost_0.05R": {
+            "trades": 4611,
+            "average_net_R": -0.0026912833256607436,
+            "total_net_R": -12.40950741462169,
+            "net_profit_factor": 0.994191007180462,
+            "max_drawdown_net_R": 96.85075785367184
+          },
+          "cost_0.1R": {
+            "trades": 4611,
+            "average_net_R": -0.05269128332566077,
+            "total_net_R": -242.9595074146218,
+            "net_profit_factor": 0.8931157954010074,
+            "max_drawdown_net_R": 285.1077431292735
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 944,
+            "average_net_R": -6.78753319685092e-05,
+            "total_net_R": -0.06407431337827268,
+            "net_profit_factor": 0.9998445262643016,
+            "max_drawdown_net_R": 34.22162263687621
+          },
+          "cost_0.01R": {
+            "trades": 944,
+            "average_net_R": -0.010067875331968493,
+            "total_net_R": -9.504074313378258,
+            "net_profit_factor": 0.9772355674037441,
+            "max_drawdown_net_R": 37.83162263687624
+          },
+          "cost_0.02R": {
+            "trades": 944,
+            "average_net_R": -0.02006787533196851,
+            "total_net_R": -18.944074313378273,
+            "net_profit_factor": 0.9552060606637606,
+            "max_drawdown_net_R": 41.441622636876204
+          },
+          "cost_0.05R": {
+            "trades": 944,
+            "average_net_R": -0.05006787533196852,
+            "total_net_R": -47.26407431337828,
+            "net_profit_factor": 0.8924297228086119,
+            "max_drawdown_net_R": 57.71174226209758
+          },
+          "cost_0.1R": {
+            "trades": 944,
+            "average_net_R": -0.10006787533196854,
+            "total_net_R": -94.4640743133783,
+            "net_profit_factor": 0.7979679720740178,
+            "max_drawdown_net_R": 103.96174226209762
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 824,
+            "average_net_R": 0.05128319482578413,
+            "total_net_R": 42.25735253644613,
+            "net_profit_factor": 1.1253043360761146,
+            "max_drawdown_net_R": 21.805391679481907
+          },
+          "cost_0.01R": {
+            "trades": 824,
+            "average_net_R": 0.04128319482578416,
+            "total_net_R": 34.01735253644615,
+            "net_profit_factor": 1.099507686881755,
+            "max_drawdown_net_R": 23.405391679481898
+          },
+          "cost_0.02R": {
+            "trades": 824,
+            "average_net_R": 0.031283194825784136,
+            "total_net_R": 25.77735253644613,
+            "net_profit_factor": 1.0743873781910738,
+            "max_drawdown_net_R": 25.00539167948191
+          },
+          "cost_0.05R": {
+            "trades": 824,
+            "average_net_R": 0.0012831948257841363,
+            "total_net_R": 1.0573525364461283,
+            "net_profit_factor": 1.0029311232357072,
+            "max_drawdown_net_R": 29.805391679481914
+          },
+          "cost_0.1R": {
+            "trades": 824,
+            "average_net_R": -0.04871680517421589,
+            "total_net_R": -40.14264746355389,
+            "net_profit_factor": 0.895776934726877,
+            "max_drawdown_net_R": 46.838003232390484
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.5,
+        "trail_activation": 0.25,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 15,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4791,
+            "average_net_R": 0.047170518298082685,
+            "total_net_R": 225.99395316611415,
+            "net_profit_factor": 1.091582045885443,
+            "max_drawdown_net_R": 54.07077468452778
+          },
+          "cost_0.01R": {
+            "trades": 4791,
+            "average_net_R": 0.03717051829808271,
+            "total_net_R": 178.08395316611427,
+            "net_profit_factor": 1.0712797191694985,
+            "max_drawdown_net_R": 60.21077468452745
+          },
+          "cost_0.02R": {
+            "trades": 4791,
+            "average_net_R": 0.027170518298082695,
+            "total_net_R": 130.1739531661142,
+            "net_profit_factor": 1.0514688090056592,
+            "max_drawdown_net_R": 66.35077468452735
+          },
+          "cost_0.05R": {
+            "trades": 4791,
+            "average_net_R": -0.0028294817019173164,
+            "total_net_R": -13.556046833885864,
+            "net_profit_factor": 0.9948301331947563,
+            "max_drawdown_net_R": 103.647432320323
+          },
+          "cost_0.1R": {
+            "trades": 4791,
+            "average_net_R": -0.05282948170191734,
+            "total_net_R": -253.10604683388598,
+            "net_profit_factor": 0.9089113792990213,
+            "max_drawdown_net_R": 304.92714907141067
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 973,
+            "average_net_R": 0.03481754936436987,
+            "total_net_R": 33.877475531531886,
+            "net_profit_factor": 1.0690590529545234,
+            "max_drawdown_net_R": 37.55237121677093
+          },
+          "cost_0.01R": {
+            "trades": 973,
+            "average_net_R": 0.02481754936436989,
+            "total_net_R": 24.147475531531903,
+            "net_profit_factor": 1.048616026019533,
+            "max_drawdown_net_R": 39.35237121677092
+          },
+          "cost_0.02R": {
+            "trades": 973,
+            "average_net_R": 0.014817549364369874,
+            "total_net_R": 14.417475531531887,
+            "net_profit_factor": 1.0286712867210883,
+            "max_drawdown_net_R": 41.15237121677092
+          },
+          "cost_0.05R": {
+            "trades": 973,
+            "average_net_R": -0.015182450635630132,
+            "total_net_R": -14.772524468468118,
+            "net_profit_factor": 0.9716733954954949,
+            "max_drawdown_net_R": 46.55237121677093
+          },
+          "cost_0.1R": {
+            "trades": 973,
+            "average_net_R": -0.06518245063563016,
+            "total_net_R": -63.42252446846815,
+            "net_profit_factor": 0.8853124491888453,
+            "max_drawdown_net_R": 71.0977362069231
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 857,
+            "average_net_R": -0.0008988174323807652,
+            "total_net_R": -0.7702865395503158,
+            "net_profit_factor": 0.9982594153551534,
+            "max_drawdown_net_R": 54.1352205574271
+          },
+          "cost_0.01R": {
+            "trades": 857,
+            "average_net_R": -0.010898817432380747,
+            "total_net_R": -9.3402865395503,
+            "net_profit_factor": 0.9791569078640777,
+            "max_drawdown_net_R": 58.8452205574271
+          },
+          "cost_0.02R": {
+            "trades": 857,
+            "average_net_R": -0.020898817432380763,
+            "total_net_R": -17.910286539550313,
+            "net_profit_factor": 0.9605274834990116,
+            "max_drawdown_net_R": 63.55522055742712
+          },
+          "cost_0.05R": {
+            "trades": 857,
+            "average_net_R": -0.05089881743238077,
+            "total_net_R": -43.62028653955032,
+            "net_profit_factor": 0.9073255214675741,
+            "max_drawdown_net_R": 77.71723070691822
+          },
+          "cost_0.1R": {
+            "trades": 857,
+            "average_net_R": -0.1008988174323808,
+            "total_net_R": -86.47028653955034,
+            "net_profit_factor": 0.8267888803182615,
+            "max_drawdown_net_R": 101.51723070691828
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "initial_sl": 0.75,
+        "trail_activation": 0.75,
+        "trail_gap": 0.75
+      },
+      "max_hold_m1_bars": 60,
+      "splits": {
+        "train": {
+          "cost_0R": {
+            "trades": 4502,
+            "average_net_R": 0.04685925083937519,
+            "total_net_R": 210.96034727886712,
+            "net_profit_factor": 1.0929910651506418,
+            "max_drawdown_net_R": 46.164869787463104
+          },
+          "cost_0.01R": {
+            "trades": 4502,
+            "average_net_R": 0.03685925083937522,
+            "total_net_R": 165.94034727886722,
+            "net_profit_factor": 1.0724064107358415,
+            "max_drawdown_net_R": 52.38586391284723
+          },
+          "cost_0.02R": {
+            "trades": 4502,
+            "average_net_R": 0.0268592508393752,
+            "total_net_R": 120.92034727886714,
+            "net_profit_factor": 1.052230788869995,
+            "max_drawdown_net_R": 59.165863912847215
+          },
+          "cost_0.05R": {
+            "trades": 4502,
+            "average_net_R": -0.0031407491606248138,
+            "total_net_R": -14.139652721132911,
+            "net_profit_factor": 0.9940741025094242,
+            "max_drawdown_net_R": 86.7124971746336
+          },
+          "cost_0.1R": {
+            "trades": 4502,
+            "average_net_R": -0.05314074916062485,
+            "total_net_R": -239.23965272113307,
+            "net_profit_factor": 0.9046085678952029,
+            "max_drawdown_net_R": 276.7928402856695
+          }
+        },
+        "validation": {
+          "cost_0R": {
+            "trades": 920,
+            "average_net_R": 0.01503807937990698,
+            "total_net_R": 13.835033029514422,
+            "net_profit_factor": 1.03008017161159,
+            "max_drawdown_net_R": 45.10293164379166
+          },
+          "cost_0.01R": {
+            "trades": 920,
+            "average_net_R": 0.005038079379907002,
+            "total_net_R": 4.6350330295144415,
+            "net_profit_factor": 1.0099767768041807,
+            "max_drawdown_net_R": 48.632931643791636
+          },
+          "cost_0.02R": {
+            "trades": 920,
+            "average_net_R": -0.004961920620093017,
+            "total_net_R": -4.5649669704855755,
+            "net_profit_factor": 0.990272227879306,
+            "max_drawdown_net_R": 52.16293164379162
+          },
+          "cost_0.05R": {
+            "trades": 920,
+            "average_net_R": -0.034961920620093026,
+            "total_net_R": -32.16496697048559,
+            "net_profit_factor": 0.9334834962638769,
+            "max_drawdown_net_R": 62.75293164379163
+          },
+          "cost_0.1R": {
+            "trades": 920,
+            "average_net_R": -0.08496192062009306,
+            "total_net_R": -78.16496697048561,
+            "net_profit_factor": 0.8461883198671017,
+            "max_drawdown_net_R": 89.67943246651849
+          }
+        },
+        "test_diagnostic_only": {
+          "cost_0R": {
+            "trades": 808,
+            "average_net_R": 0.03482268327327849,
+            "total_net_R": 28.136728084809018,
+            "net_profit_factor": 1.07112054807342,
+            "max_drawdown_net_R": 29.220788825212253
+          },
+          "cost_0.01R": {
+            "trades": 808,
+            "average_net_R": 0.02482268327327851,
+            "total_net_R": 20.056728084809034,
+            "net_profit_factor": 1.0501827736984914,
+            "max_drawdown_net_R": 31.24078882521232
+          },
+          "cost_0.02R": {
+            "trades": 808,
+            "average_net_R": 0.01482268327327849,
+            "total_net_R": 11.97672808480902,
+            "net_profit_factor": 1.0296606935978254,
+            "max_drawdown_net_R": 33.2607888252123
+          },
+          "cost_0.05R": {
+            "trades": 808,
+            "average_net_R": -0.01517731672672152,
+            "total_net_R": -12.263271915190987,
+            "net_profit_factor": 0.9705446739695259,
+            "max_drawdown_net_R": 39.32078882521228
+          },
+          "cost_0.1R": {
+            "trades": 808,
+            "average_net_R": -0.06517731672672154,
+            "total_net_R": -52.66327191519101,
+            "net_profit_factor": 0.8797925407853696,
+            "max_drawdown_net_R": 59.09684962494467
+          }
+        }
+      }
+    }
+  ],
+  "assumptions": {
+    "take_profit": "None.",
+    "entry": "M5 signal-bar close; stop checks begin on following M1 bar.",
+    "max_holding": "15, 30, 60, or 90 M1 bars.",
+    "position_management": "One open position for this setup.",
+    "session_gap": "Exit at prior M1 close if the next M1 timestamp gaps.",
+    "cost_scenarios": "0 to 0.10R per round trip; sensitivity only, not a broker quote.",
+    "test_period": "Diagnostic only; prior analysis has inspected this period."
+  }
+}

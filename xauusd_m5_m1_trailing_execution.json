@@ -1,0 +1,157 @@
+{
+  "source": "Existing local HistData XAUUSD M1 archives",
+  "m1_archive_files": 15,
+  "m1_bar_count": 1673721,
+  "duplicate_m1_rows_skipped": 1848,
+  "conflicting_m1_timestamps_skipped": 1491,
+  "m5_signal_bars": 334217,
+  "date_range_m1_minutes": {
+    "first": 1062947160,
+    "last": 1065494458
+  },
+  "strategy": {
+    "setup": "support_rejection_uptrend",
+    "swing_scale": 0.75,
+    "direction": "long",
+    "entry": "M5 signal-bar close; first following M1 bar",
+    "initial_sl": 0.75,
+    "trailing_activation": 1.0,
+    "trailing_gap": 0.75,
+    "max_hold_m1_bars": 60,
+    "take_profit": "None."
+  },
+  "splits": {
+    "train": {
+      "metrics": {
+        "cost_0R": {
+          "trades": 4415,
+          "average_net_R": 0.044277427915280346,
+          "total_net_R": 195.48484424596273,
+          "net_profit_factor": 1.0788665586456543,
+          "max_drawdown_net_R": 53.32867101695285,
+          "stop_exit_rate": 0.9614949037372593,
+          "session_gap_exit_rate": 0.01698754246885617
+        },
+        "cost_0.02R": {
+          "trades": 4415,
+          "average_net_R": 0.024277427915280356,
+          "total_net_R": 107.18484424596276,
+          "net_profit_factor": 1.042380334345317,
+          "max_drawdown_net_R": 61.757898994113745,
+          "stop_exit_rate": 0.9614949037372593,
+          "session_gap_exit_rate": 0.01698754246885617
+        },
+        "cost_0.05R": {
+          "trades": 4415,
+          "average_net_R": -0.005722572084719659,
+          "total_net_R": -25.265155754037295,
+          "net_profit_factor": 0.9903010808721254,
+          "max_drawdown_net_R": 89.29306791749012,
+          "stop_exit_rate": 0.9614949037372593,
+          "session_gap_exit_rate": 0.01698754246885617
+        },
+        "cost_0.1R": {
+          "trades": 4415,
+          "average_net_R": -0.055722572084719695,
+          "total_net_R": -246.01515575403744,
+          "net_profit_factor": 0.9099357676337081,
+          "max_drawdown_net_R": 274.0041278397866,
+          "stop_exit_rate": 0.9614949037372593,
+          "session_gap_exit_rate": 0.01698754246885617
+        }
+      },
+      "potential_entries": 5058,
+      "skipped_missing_m1_or_split_boundary": 22
+    },
+    "validation": {
+      "metrics": {
+        "cost_0R": {
+          "trades": 898,
+          "average_net_R": 0.018375751074585295,
+          "total_net_R": 16.501424464977596,
+          "net_profit_factor": 1.032664921739121,
+          "max_drawdown_net_R": 39.995150108155904,
+          "stop_exit_rate": 0.9732739420935412,
+          "session_gap_exit_rate": 0.01002227171492205
+        },
+        "cost_0.02R": {
+          "trades": 898,
+          "average_net_R": -0.0016242489254147039,
+          "total_net_R": -1.4585755350224041,
+          "net_profit_factor": 0.9971699074498402,
+          "max_drawdown_net_R": 46.8151501081559,
+          "stop_exit_rate": 0.9732739420935412,
+          "session_gap_exit_rate": 0.01002227171492205
+        },
+        "cost_0.05R": {
+          "trades": 898,
+          "average_net_R": -0.03162424892541471,
+          "total_net_R": -28.398575535022413,
+          "net_profit_factor": 0.9464895527386074,
+          "max_drawdown_net_R": 57.045150108155894,
+          "stop_exit_rate": 0.9732739420935412,
+          "session_gap_exit_rate": 0.01002227171492205
+        },
+        "cost_0.1R": {
+          "trades": 898,
+          "average_net_R": -0.08162424892541476,
+          "total_net_R": -73.29857553502245,
+          "net_profit_factor": 0.8682298527851944,
+          "max_drawdown_net_R": 85.76786550459454,
+          "stop_exit_rate": 0.9732739420935412,
+          "session_gap_exit_rate": 0.01002227171492205
+        }
+      },
+      "potential_entries": 1019,
+      "skipped_missing_m1_or_split_boundary": 2
+    },
+    "test_diagnostic_only": {
+      "metrics": {
+        "cost_0R": {
+          "trades": 793,
+          "average_net_R": 0.002464743340108288,
+          "total_net_R": 1.9545414687058724,
+          "net_profit_factor": 1.0043448783150115,
+          "max_drawdown_net_R": 36.72837653423556,
+          "stop_exit_rate": 0.9546027742749055,
+          "session_gap_exit_rate": 0.027742749054224466
+        },
+        "cost_0.02R": {
+          "trades": 793,
+          "average_net_R": -0.01753525665989171,
+          "total_net_R": -13.905458531294125,
+          "net_profit_factor": 0.9697028721584624,
+          "max_drawdown_net_R": 40.60837653423557,
+          "stop_exit_rate": 0.9546027742749055,
+          "session_gap_exit_rate": 0.027742749054224466
+        },
+        "cost_0.05R": {
+          "trades": 793,
+          "average_net_R": -0.04753525665989172,
+          "total_net_R": -37.695458531294136,
+          "net_profit_factor": 0.920246491059073,
+          "max_drawdown_net_R": 46.4283765342356,
+          "stop_exit_rate": 0.9546027742749055,
+          "session_gap_exit_rate": 0.027742749054224466
+        },
+        "cost_0.1R": {
+          "trades": 793,
+          "average_net_R": -0.09753525665989175,
+          "total_net_R": -77.34545853129416,
+          "net_profit_factor": 0.8439095464108766,
+          "max_drawdown_net_R": 81.42007336176417,
+          "stop_exit_rate": 0.9546027742749055,
+          "session_gap_exit_rate": 0.027742749054224466
+        }
+      },
+      "potential_entries": 907,
+      "skipped_missing_m1_or_split_boundary": 12
+    }
+  },
+  "execution_notes": {
+    "intrabar": "Trailing updates are checked on M1. Existing stop is checked before updating from that candle's high/low.",
+    "market_gaps": "Open positions exit at the prior M1 close when a time gap occurs, to avoid carrying a scalp across a closed session.",
+    "costs": "Bid-only data; actual spread, commission, swap, and slippage are unavailable. Cost deductions are sensitivity scenarios.",
+    "test_period": "Diagnostic only; prior research has inspected this period."
+  }
+}
