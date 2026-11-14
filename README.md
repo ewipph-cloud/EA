@@ -1,34 +1,39 @@
 # Riset Scalping XAUUSD
 
-Kumpulan skrip Python untuk riset pola swing/candle, trendline, indikator,
-dan trailing-stop scalping XAUUSD. Skrip menggunakan Python standard library.
+Repositori ini difokuskan pada eksperimen terbaru: entry M1 dengan konteks
+tren M5. Ini masih prototipe riset, bukan EA siap live atau strategi yang
+terbukti profit.
 
-**Status:** eksperimen historis, bukan EA siap live dan belum membuktikan
-profitabilitas setelah biaya broker. Hasil uji terbaru tetap negatif pada
-periode diagnostik: konfigurasi terbaik yang dipilih dari data train
-memperoleh rata-rata `-0.0212R` setelah simulasi biaya `0.02R` per round trip.
-Biaya tersebut hanya asumsi, bukan spread broker yang terukur.
+## Metode yang diuji
 
-## Data
+- Konteks M5 memakai EMA(5), EMA(13), kemiringan EMA(13), dan garis tengah
+  Bollinger 20-bar.
+- Entry M1 mengikuti arah konteks M5 saat candle M1 searah dan close melewati
+  close candle sebelumnya.
+- Satu posisi terbuka pada satu waktu; SL awal 0,75 ATR, trailing mulai pada
+  0,25 ATR dengan jarak 0,50 ATR, tanpa TP, dan batas tahan 5 bar M1.
 
-Data harga tidak disertakan. Sumber historis yang dipakai adalah feed bid-only;
-spread, komisi, swap, dan slippage broker tidak tersedia. Arsip M1 memiliki
-timestamp berulang/konflik yang ditangani dengan mengecualikan bar ambigu.
+Laporan hasil terbaru ada di `xauusd_m1_entries_m5_context_relaxed.json`.
+Rata-rata posisi per hari aktif pada train/validation/periode diagnostik adalah
+sekitar 259/273/277. Target rata-rata 100 posisi tercapai, tetapi tidak pada
+setiap hari. Hasil validation dan periode diagnostik berubah negatif pada
+asumsi biaya 0,05R per posisi; biaya ini hipotetis, bukan spread broker.
 
-Untuk menjalankan riset, tempatkan file sumber data yang diperlukan di direktori
-ini. Nama file yang dipakai skrip tercantum pada konstanta `DATA_PATH` atau
-di bagian `HISTDATA_XAUUSD_M1_*.zip`.
+Data historis yang tersedia hanya bid, sehingga spread, komisi, swap, dan
+slippage aktual tidak diketahui. Periode diagnostik juga bukan holdout yang
+belum pernah diperiksa. Karena itu hasil ini belum menunjukkan profitabilitas
+untuk trading live. EA MQL5 belum dibuat.
 
-## Eksperimen utama
+## Menjalankan riset
+
+Data harga tidak disertakan. Letakkan file sumber M5
+`XAUUSD_M5_HistData_2022-2026.csv` dan arsip M1
+`HISTDATA_XAUUSD_M1_*.zip` di direktori ini, lalu jalankan:
 
 ```bash
 python clean_xauusd_m5_history.py
-python backtest_m5_signal_m1_trailing.py
-python optimize_m1_trailing_stops.py
+python research_m1_entries_m5_context.py
 ```
 
-Jalankan `python <nama_skrip>.py` untuk eksperimen lain. Hasil JSON ditulis ke
-direktori yang sama.
-
-Semua hasil adalah simulasi riset. Jangan gunakan sebagai rekomendasi trading
-atau mengirim order live tanpa validasi terpisah pada data broker dan akun demo.
+Skrip menggunakan Python standard library. File data dan hasil antara yang
+besar diabaikan Git melalui `.gitignore`.
