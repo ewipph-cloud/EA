@@ -1,0 +1,191 @@
+{
+  "data": {
+    "m5_bars": 334217,
+    "m1_bars": 1673721,
+    "m1_archives": 15,
+    "duplicate_m1_rows_skipped": 1848,
+    "conflicting_m1_timestamps_skipped": 1491
+  },
+  "strategy": {
+    "m5_context": "EMA(5)/EMA(13) alignment and EMA(13) slope, with close above/below the 20-bar Bollinger midline",
+    "m1_entry": "M1 candle body aligned with M5 direction, no minimum body/range threshold, and close beyond prior M1 close",
+    "entry_price": "Next consecutive M1 bar open",
+    "position_policy": "One open position at a time",
+    "initial_stop_atr": 0.75,
+    "trailing_activation_atr": 0.25,
+    "trailing_gap_atr": 0.5,
+    "max_hold_m1_bars": 5,
+    "take_profit": "None"
+  },
+  "signal_counts_before_position_overlap": {
+    "train": 488289,
+    "validation": 107052,
+    "test_diagnostic_only": 107078
+  },
+  "splits": {
+    "train": {
+      "cost_0R": {
+        "positions": 276501,
+        "average_net_R": 0.07860469255157258,
+        "total_net_R": 21734.27609520237,
+        "profit_factor_net": 1.197604512424928,
+        "days_with_trades": 1066,
+        "mean_positions_per_active_day": 259.3818011257036,
+        "median_positions_per_active_day": 308.0,
+        "p10_positions_per_active_day": 86,
+        "max_positions_per_active_day": 378,
+        "active_days_at_least_100": 887,
+        "active_day_count": 1066
+      },
+      "cost_0.02R": {
+        "positions": 276501,
+        "average_net_R": 0.05860469255157258,
+        "total_net_R": 16204.25609520237,
+        "profit_factor_net": 1.1433184807187327,
+        "days_with_trades": 1066,
+        "mean_positions_per_active_day": 259.3818011257036,
+        "median_positions_per_active_day": 308.0,
+        "p10_positions_per_active_day": 86,
+        "max_positions_per_active_day": 378,
+        "active_days_at_least_100": 887,
+        "active_day_count": 1066
+      },
+      "cost_0.05R": {
+        "positions": 276501,
+        "average_net_R": 0.02860469255157258,
+        "total_net_R": 7909.22609520237,
+        "profit_factor_net": 1.0671650643919097,
+        "days_with_trades": 1066,
+        "mean_positions_per_active_day": 259.3818011257036,
+        "median_positions_per_active_day": 308.0,
+        "p10_positions_per_active_day": 86,
+        "max_positions_per_active_day": 378,
+        "active_days_at_least_100": 887,
+        "active_day_count": 1066
+      },
+      "cost_0.1R": {
+        "positions": 276501,
+        "average_net_R": -0.021395307448427443,
+        "total_net_R": -5915.823904797637,
+        "profit_factor_net": 0.9529736953405732,
+        "days_with_trades": 1066,
+        "mean_positions_per_active_day": 259.3818011257036,
+        "median_positions_per_active_day": 308.0,
+        "p10_positions_per_active_day": 86,
+        "max_positions_per_active_day": 378,
+        "active_days_at_least_100": 887,
+        "active_day_count": 1066
+      }
+    },
+    "validation": {
+      "cost_0R": {
+        "positions": 60850,
+        "average_net_R": 0.04538166528299682,
+        "total_net_R": 2761.474332470357,
+        "profit_factor_net": 1.1153182638491375,
+        "days_with_trades": 223,
+        "mean_positions_per_active_day": 272.86995515695065,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 89,
+        "max_positions_per_active_day": 373,
+        "active_days_at_least_100": 186,
+        "active_day_count": 223
+      },
+      "cost_0.02R": {
+        "positions": 60850,
+        "average_net_R": 0.02538166528299682,
+        "total_net_R": 1544.4743324703566,
+        "profit_factor_net": 1.062712208733172,
+        "days_with_trades": 223,
+        "mean_positions_per_active_day": 272.86995515695065,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 89,
+        "max_positions_per_active_day": 373,
+        "active_days_at_least_100": 186,
+        "active_day_count": 223
+      },
+      "cost_0.05R": {
+        "positions": 60850,
+        "average_net_R": -0.004618334717003183,
+        "total_net_R": -281.0256675296437,
+        "profit_factor_net": 0.9890521138740577,
+        "days_with_trades": 223,
+        "mean_positions_per_active_day": 272.86995515695065,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 89,
+        "max_positions_per_active_day": 373,
+        "active_days_at_least_100": 186,
+        "active_day_count": 223
+      },
+      "cost_0.1R": {
+        "positions": 60850,
+        "average_net_R": -0.054618334717003204,
+        "total_net_R": -3323.525667529645,
+        "profit_factor_net": 0.8789556384775459,
+        "days_with_trades": 223,
+        "mean_positions_per_active_day": 272.86995515695065,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 89,
+        "max_positions_per_active_day": 373,
+        "active_days_at_least_100": 186,
+        "active_day_count": 223
+      }
+    },
+    "test_diagnostic_only": {
+      "cost_0R": {
+        "positions": 61404,
+        "average_net_R": 0.0348390338450811,
+        "total_net_R": 2139.25603422336,
+        "profit_factor_net": 1.0880582756443826,
+        "days_with_trades": 222,
+        "mean_positions_per_active_day": 276.5945945945946,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 90,
+        "max_positions_per_active_day": 364,
+        "active_days_at_least_100": 189,
+        "active_day_count": 222
+      },
+      "cost_0.02R": {
+        "positions": 61404,
+        "average_net_R": 0.0148390338450811,
+        "total_net_R": 911.1760342233599,
+        "profit_factor_net": 1.0364650192761427,
+        "days_with_trades": 222,
+        "mean_positions_per_active_day": 276.5945945945946,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 90,
+        "max_positions_per_active_day": 364,
+        "active_days_at_least_100": 189,
+        "active_day_count": 222
+      },
+      "cost_0.05R": {
+        "positions": 61404,
+        "average_net_R": -0.015160966154918906,
+        "total_net_R": -930.9439657766404,
+        "profit_factor_net": 0.9642603304894765,
+        "days_with_trades": 222,
+        "mean_positions_per_active_day": 276.5945945945946,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 90,
+        "max_positions_per_active_day": 364,
+        "active_days_at_least_100": 189,
+        "active_day_count": 222
+      },
+      "cost_0.1R": {
+        "positions": 61404,
+        "average_net_R": -0.06516096615491893,
+        "total_net_R": -4001.143965776642,
+        "profit_factor_net": 0.8564095957946738,
+        "days_with_trades": 222,
+        "mean_positions_per_active_day": 276.5945945945946,
+        "median_positions_per_active_day": 324.0,
+        "p10_positions_per_active_day": 90,
+        "max_positions_per_active_day": 364,
+        "active_days_at_least_100": 189,
+        "active_day_count": 222
+      }
+    }
+  },
+  "cost_note": "Bid-only data; costs are hypothetical R deductions, not broker spread or slippage quotes.",
+  "split_note": "Chronological 70/15/15 split. The test period is diagnostic only because earlier research inspected it."
+}
